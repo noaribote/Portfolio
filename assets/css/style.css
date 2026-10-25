@@ -1,0 +1,24 @@
+@import url('source/keyframes.css');
+@import url('source/media.css');
+
+:root {
+  --papierClair: #f5f4f0;
+  --papierFonce: #eeede8;
+  --darkBlue: #202d43;
+  --blue: #294668;
+  --bordeaux: #80394a;
+  --muted: #737c83;
+  --line: #d8d8d2;
+  --serif: "Playfair Display", Georgia,serif;
+  --sans: "DM Sans", Arial,sans-serif;
+  --mono: "DM Mono", monospace;
+}
+
+* { padding: 0; margin: 0; }
+
+body {
+    height: 100vh;
+    background: var(--papierClair);
+    overflow-y: auto;
+    overflow-x: hidden;
+} .FlexCenter, .FlexCenter2 { display: flex; align-items: center; justify-content: center; }.FlexCenter { flex-direction: column }
