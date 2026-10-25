@@ -1,5 +1,8 @@
 @import url('source/keyframes.css');
 @import url('source/media.css');
+@import url('nav.css');
+@import url('main.css');
+@import url('foot.css');
 
 :root {
   --papierClair: #f5f4f0;
@@ -7,6 +10,7 @@
   --darkBlue: #202d43;
   --blue: #294668;
   --bordeaux: #80394a;
+  --text: #656f78;
   --muted: #737c83;
   --line: #d8d8d2;
   --serif: "Playfair Display", Georgia,serif;
@@ -14,11 +18,54 @@
   --mono: "DM Mono", monospace;
 }
 
+::-webkit-scrollbar-button { display: none; }
+::-webkit-scrollbar {
+    width: 5px;
+}::-webkit-scrollbar-thumb {
+    background: var(--line);
+}::-webkit-scrollbar-thumb:hover {
+    background: var(--papierClair);
+}::-webkit-scrollbar-track { background: var(--papierFonce); }
+
+::selection {
+    background: var(--bordeaux);
+    color: white;
+}
+
 * { padding: 0; margin: 0; }
 
 body {
     height: 100vh;
+    color: var(--text);
     background: var(--papierClair);
     overflow-y: auto;
     overflow-x: hidden;
+    font-family: var(--sans);
+    letter-spacing: 0.6px;
 } .FlexCenter, .FlexCenter2 { display: flex; align-items: center; justify-content: center; }.FlexCenter { flex-direction: column }
+.limited { width: 60%; height: 100%; }
+
+h1 {
+    font-weight: 500;
+    font-size: 60px;
+    font-family: var(--serif);
+    letter-spacing: -2px;
+    color: var(--darkBlue);
+} h1 em {
+    font-weight: 500px;
+    color: var(--bordeaux);
+}
+
+a {
+    color: var(--muted);
+    text-decoration: none;
+    font-family: var(--sans);
+    transition: 0.2s ease-in-out;
+} a:hover, a:focus {
+    cursor: pointer;
+    color: var(--bordeaux);
+}
+
+img, iframe {
+    user-select: none;
+} img { pointer-events: none; }
