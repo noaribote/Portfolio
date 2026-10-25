@@ -48,6 +48,21 @@
                 </div>
             </div>
         </div>
+        <div class="spoty heightAuto notColored FlexCenter">
+            <div class="limited FlexCenter2" style="position: relative">
+                <img class="photo1" src="assets/images/noa/noaribote_side.webp" alt="noa ribote moral side">
+                <div class="contre-photo">
+                    <h1>Mes <em>week-ends</em> se résument à...</h1>
+                    <ul>
+                        <li>Travailler sur moi-même</li>
+                        <li>Travailler sur mes projets</li>
+                        <li>Entretenir mes liens</li>
+                        <li>Découvrir de nouvelles choses</li>
+                    </ul>
+                    <i class="fa-regular fa-images"></i>
+                </div>
+            </div>
+        </div>
         <div class="spoty FlexCenter">
             <div class="limited" style="position: relative">
                 <div class="spotyContent">
@@ -61,21 +76,22 @@
                         <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>
                     </button>
                     <div class="movie-viewport" aria-live="polite">
-                    <div class="rightCenter FlexCenter2">
-                    <?php
-                        $place = 1;
-                        foreach ($Movies as $movie) {
-                            $num = ($place === 1) ? '<i class="fa-solid fa-trophy"></i>' : htmlspecialchars($place, ENT_QUOTES, 'UTF-8');
-                            echo '
-                                <div class="movie-poster">
-                                    <img src="assets/images/movie/'.$movie.'.webp" alt="'.$movie.'">
-                                    <h3 class="FlexCenter">'.$num.'</h3>
-                                </div>
-                            ';
-                            $place += 1;
-                        }
-                    ?>
-                    </div>
+                        <div class="rightCenter FlexCenter2">
+                            <?php
+                                $place = 1;
+                                foreach ($Movies as $movie) {
+                                    $num = ($place === 1) ? '<i class="fa-solid fa-trophy"></i>' : htmlspecialchars($place, ENT_QUOTES, 'UTF-8');
+                                    echo '
+                                        <div class="movie-poster">
+                                            <img src="assets/images/movie/'.$movie.'.webp" alt="'.$movie.'">
+                                            <h3 class="FlexCenter">'.$num.'</h3>
+                                        </div>
+                                    ';
+                                    $place += 1;
+                                }
+                            ?>
+                        </div>
+                        <div class="white-shadow"></div>
                     </div>
                     <button class="movie-nav movie-nav-next" type="button" aria-label="Film suivant">
                         <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>

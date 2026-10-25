@@ -5,6 +5,35 @@ main {
     z-index: 5;
 }
 
+.photo1 {
+    height: auto; width: 30%;
+    position: relative;
+    left: 0;
+    border: 5px solid transparent;
+    box-shadow: 0 0 10px #80394a3d;
+    transition: 0.2s ease-in-out;
+    transform: rotate(-3deg);
+} .photo1:hover { transform: rotate(-2deg); cursor: grab; }
+
+.contre-photo {
+    height: auto; width: 60%;
+    position: relative;
+    right: 0;
+    margin-left: 10%;
+}
+
+.contre-photo ul { margin: 50px }
+.contre-photo ul li { margin: 10px; font-style: italic; }
+
+.contre-photo .fa-images {
+    color: var(--line);
+    font-size: 200px;
+    position: absolute;
+    right: 0; bottom: 0;
+    opacity: 20%;
+    transform: rotate(25deg);
+}
+
 .off {
     color: var(--sans);
     font-size: 11px;
@@ -72,7 +101,6 @@ main {
 }
 
 .card h3 {
-    border-top: 1px solid var(--bordeaux);
     width: 100%;
     margin-top: 10px;
     padding-top: 10px;
@@ -190,6 +218,14 @@ main {
     min-width: 210px;
     max-width: 210px;
     margin: 0;
+}
+
+.white-shadow {
+    height: 100%; width: 30px;
+    opacity: 40%;
+    position: absolute;
+    right: 0;
+    background: linear-gradient(to left, var(--papierFonce), transparent);
 }
 
 .movie-pagination {
