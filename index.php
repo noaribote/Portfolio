@@ -56,7 +56,12 @@
                         Vrai cinéphile amateur depuis tout jeune. 
                     </p>
                 </div>
-                <div class="rightCenter FlexCenter2">
+                <div class="movie-carousel" aria-label="Classement des films">
+                    <button class="movie-nav movie-nav-prev" type="button" aria-label="Film précédent" disabled>
+                        <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>
+                    </button>
+                    <div class="movie-viewport" aria-live="polite">
+                    <div class="rightCenter FlexCenter2">
                     <?php
                         $place = 1;
                         foreach ($Movies as $movie) {
@@ -70,6 +75,16 @@
                             $place += 1;
                         }
                     ?>
+                    </div>
+                    </div>
+                    <button class="movie-nav movie-nav-next" type="button" aria-label="Film suivant">
+                        <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+                    </button>
+                </div>
+                <div class="movie-pagination" role="group" aria-label="Position dans le classement">
+                    <?php for ($rank = 1; $rank <= 5; $rank++): ?>
+                        <button type="button" class="movie-dot<?= $rank === 1 ? ' is-active' : '' ?>" aria-label="Film numero <?= $rank ?>" aria-current="<?= $rank === 1 ? 'true' : 'false' ?>"></button>
+                    <?php endfor; ?>
                 </div>
             </div>
         </div>
@@ -90,7 +105,7 @@
                             echo '
                                 <div class="card '.$constante.'">
                                     <a href="'.htmlspecialchars($project[4], ENT_QUOTES, 'UTF-8').'" target="_blank">
-                                        <img src="assets/images/project/'.htmlspecialchars($project[3], ENT_QUOTES, 'UTF-8').'.png" alt="' . htmlspecialchars($name, ENT_QUOTES, 'UTF-8') . '">
+                                        <img src="assets/images/project/'.htmlspecialchars($project[3], ENT_QUOTES, 'UTF-8').'.webp" alt="' . htmlspecialchars($name, ENT_QUOTES, 'UTF-8') . '">
                                     </a>
                                     <h3>
                                         <strong>'.htmlspecialchars($name, ENT_QUOTES, 'UTF-8').'</strong>

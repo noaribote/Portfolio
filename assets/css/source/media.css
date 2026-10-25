@@ -1,0 +1,4 @@
+@media (max-width: 900px) {
+    .movie-carousel, .movie-pagination { width: 55%; }
+    .movie-viewport { left: 36px; right: 36px; }
+}
