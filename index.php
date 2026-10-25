@@ -154,9 +154,12 @@
 
         </section>
         <section id="end" class="FlexCenter">
-            <div class="limited">
-
-
+            <div class="limited FlexCenter" style="position: relative">
+                <p class="footerBAS">
+                    <span><img src="assets/images/logo.png" alt="logo"></span>
+                    <span id="copyRightAnnee"></span>
+                    <span><button id="toTOPButton-footer">Haut de page&nbsp;↗</button></span>
+                </p>
             </div>
         </section>
     </footer>

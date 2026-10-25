@@ -39,4 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
     dots.forEach((dot, index) => dot.addEventListener('click', () => showMovie(index)));
     window.addEventListener('resize', () => requestAnimationFrame(update));
     update();
+
+    document.getElementById("copyRightAnnee").innerHTML = "© " + new Date().getFullYear() + " RIBOTE--MORAL Noa";
+    document.getElementById("toTOPButton-footer").addEventListener("click", () => { window.scrollTo({ top: 0, behavior: 'smooth' }) });
 });
