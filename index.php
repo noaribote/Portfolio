@@ -1,10 +1,4 @@
-<?php
-    require_once 'model/data.php';
-    
-    $SpotifyHeight = 120;
-    $SpotifyWidth = 300;
-    $SpotifyRadius = 5;
-?>
+<?php require_once 'model/data.php' ?>
 <!DOCTYPE html>
 <html lang="fr-FR">
 <head>
@@ -26,8 +20,10 @@
         </nav>
     </header>
     <main class="FlexCenter">
+        <section>
 
 
+        </section>
         <div class="spoty FlexCenter">
             <div class="limited" style="position: relative">
                 <div class="spotyContent">
@@ -41,7 +37,7 @@
                     <?php
                         foreach ($SpotifyMusics as $SpotifySuite) {
                             echo '
-                                <iframe data-testid="embed-iframe" style="border-radius:'.$SpotifyRadius.'px"
+                                <iframe data-testid="embed-iframe" style="border-radius: 12px"
                                     src="https://open.spotify.com/embed/'.$SpotifySuite.'" width="'.$SpotifyWidth.'" height="'.$SpotifyHeight.'"
                                     frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen;
                                     picture-in-picture" loading="lazy">
@@ -52,12 +48,11 @@
                 </div>
             </div>
         </div>
-
         <div class="spoty heightAuto notColored FlexCenter">
             <div class="limited" style="position: relative">
                 <div class="spotyContent">
                     <h1><em>Projets</em> sélectionnés</h1>
-                    <br><p>Une sélection de quelques-uns de mes projets conçus personnellement avec soin.</p>
+                    <br><p>Une sélection de quelques-uns de mes projets conçus avec soin.</p>
                 </div>
                 <div class="spotyContentRight notScroll">
                     <p class="off"><i class="fa-regular fa-circle-dot"></i>&nbsp;Des idées bien construites</p>
@@ -84,9 +79,8 @@
                     ?>
                 </div>
             </div>
+            <a class="toGithub" href="https://github.com/noaribote" target="_blank">Voir tous mes projets sur GitHub&nbsp;↗</a>
         </div>
-
-
     </main>
     <footer class="FlexCenter">
         <section class="limited">
