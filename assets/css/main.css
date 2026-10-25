@@ -115,3 +115,55 @@ main {
     color: var(--bordeaux);
     border-color: var(--bordeaux);
 }
+
+.grosseGui {
+    position: absolute;
+    top: 0; left: 0;
+    color: var(--line);
+    font-size: 400px;
+}
+
+.mention {
+    position: absolute;
+    bottom: 0; right: 0;
+    color: var(--bordeaux);
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    margin: 70px;
+}
+
+.rightCenter {
+    --heightWithPadd: 40px;
+    margin: var(--heightWithPadd) 0;
+    height: calc(100% - (var(--heightWithPadd) * 2));
+    width: 55%;
+    overflow-x: scroll;
+    position: absolute;
+    right: 0;
+}
+
+.movie-poster {
+    position: relative;
+    height: 300px; min-width: 210px;
+    max-width: 210px;
+    margin: 0 10px;
+}
+
+.movie-poster img {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    pointer-events: none;
+}
+
+.movie-poster h3 {
+    user-select: none;
+    box-shadow: 0 0 10px black;
+    width: 40px; height: 40px;
+    color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 5px; right: 5px;
+    background: var(--darkBlue);
+    text-align: center;
+}

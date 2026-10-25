@@ -48,6 +48,31 @@
                 </div>
             </div>
         </div>
+        <div class="spoty FlexCenter">
+            <div class="limited" style="position: relative">
+                <div class="spotyContent">
+                    <h1>Mon TOP 5 <em>ciné</em></h1>
+                    <br><p>
+                        Vrai cinéphile amateur depuis tout jeune. 
+                    </p>
+                </div>
+                <div class="rightCenter FlexCenter2">
+                    <?php
+                        $place = 1;
+                        foreach ($Movies as $movie) {
+                            $num = ($place === 1) ? '<i class="fa-solid fa-trophy"></i>' : htmlspecialchars($place, ENT_QUOTES, 'UTF-8');
+                            echo '
+                                <div class="movie-poster">
+                                    <img src="assets/images/movie/'.$movie.'.webp" alt="'.$movie.'">
+                                    <h3 class="FlexCenter">'.$num.'</h3>
+                                </div>
+                            ';
+                            $place += 1;
+                        }
+                    ?>
+                </div>
+            </div>
+        </div>
         <div class="spoty heightAuto notColored FlexCenter">
             <div class="limited" style="position: relative">
                 <div class="spotyContent">
@@ -80,6 +105,16 @@
                 </div>
             </div>
             <a class="toGithub" href="https://github.com/noaribote" target="_blank">Voir tous mes projets sur GitHub&nbsp;↗</a>
+        </div>
+        <div class="spoty FlexCenter">
+            <div class="limited FlexCenter" style="position: relative">
+                    <h1>
+                        <span class="grosseGui">“</span>
+                        L'Intelligence Artificielle agit,
+                        <br><em>l'Homme réfléchit</em>
+                        <span class="mention">—&nbsp;Noa</span>
+                    </h1>
+            </div>
         </div>
     </main>
     <footer class="FlexCenter">
