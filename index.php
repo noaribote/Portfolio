@@ -1,16 +1,9 @@
 <?php
+    require_once 'model/data.php';
+    
     $SpotifyHeight = 120;
     $SpotifyWidth = 300;
     $SpotifyRadius = 5;
-    $SpotifyMusics = [
-        "track/7ySUcLPVX7KudhnmNcgY2D?utm_source=generator&si=a9e5e61514124840",
-        "album/77HpsjuhHrcZhIp0PyiROw?utm_source=generator&si=d71c5669824d482c",
-        "track/5GogEntGPBpfo9vTfIFvJk?utm_source=generator&si=069b6ad6a2314690",
-        "track/6TVhP2a7ESba4pR5ePflRw?utm_source=generator&si=ce65855754084301",
-        "track/2bLqfJjuC5syrsgDsZfGmn?utm_source=generator&si=6f831eb7d3ee4e0b",
-        "track/2VOomzT6VavJOGBeySqaMc?utm_source=generator&si=be0bea7fd0de4548",
-        "track/4zD7GnXyl94mNCbyaNw6xf?utm_source=generator&si=f7ba3efbea8b4754"
-    ];
 ?>
 <!DOCTYPE html>
 <html lang="fr-FR">
@@ -44,7 +37,7 @@
                         Ajoutez-y davantage de bass avec l'amplificateur et vous obtiendrez de quoi faire évader la carrosserie même.
                     </p>
                 </div>
-                <div class="spotifyContent">
+                <div class="spotyContentRight">
                     <?php
                         foreach ($SpotifyMusics as $SpotifySuite) {
                             echo '
@@ -54,6 +47,39 @@
                                     picture-in-picture" loading="lazy">
                                 </iframe>
                             ';
+                        }
+                    ?>
+                </div>
+            </div>
+        </div>
+
+        <div class="spoty heightAuto notColored FlexCenter">
+            <div class="limited" style="position: relative">
+                <div class="spotyContent">
+                    <h1><em>Projets</em> sélectionnés</h1>
+                    <br><p>Une sélection de quelques-uns de mes projets conçus personnellement avec soin.</p>
+                </div>
+                <div class="spotyContentRight notScroll">
+                    <p class="off"><i class="fa-regular fa-circle-dot"></i>&nbsp;Des idées bien construites</p>
+                </div>
+                <div class="contentGrid">
+                    <?php
+                        $cpt = 0;
+                        foreach ($Projects as $name => $project) {
+                            $constante = ($cpt % 2 === 0) ? "project-offset-sm" : "project-offset";
+                            echo '
+                                <div class="card '.$constante.'">
+                                    <a href="'.htmlspecialchars($project[4], ENT_QUOTES, 'UTF-8').'" target="_blank">
+                                        <img src="assets/images/project/'.htmlspecialchars($project[3], ENT_QUOTES, 'UTF-8').'.png" alt="' . htmlspecialchars($name, ENT_QUOTES, 'UTF-8') . '">
+                                    </a>
+                                    <h3>
+                                        <strong>'.htmlspecialchars($name, ENT_QUOTES, 'UTF-8').'</strong>
+                                        <span class="rightH2">'.htmlspecialchars($project[1], ENT_QUOTES, 'UTF-8').'&nbsp;·&nbsp;'.htmlspecialchars($project[2], ENT_QUOTES, 'UTF-8').'</span>
+                                    </h3>
+                                    <p>'.htmlspecialchars($project[0], ENT_QUOTES, 'UTF-8').'</p>
+                                </div>
+                            ';
+                            $cpt += 1;
                         }
                     ?>
                 </div>
