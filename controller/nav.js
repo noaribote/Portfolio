@@ -6,6 +6,18 @@ window.addEventListener("DOMContentLoaded", () => {
             block: 'start'
         });
     });
+    document.getElementById("nav-skills").addEventListener("click", () => {
+        document.getElementById("skills").scrollIntoView({ 
+            behavior: 'smooth',
+            block: 'start'
+        });
+    });
+    document.getElementById("nav-paths").addEventListener("click", () => {
+        document.getElementById("paths").scrollIntoView({ 
+            behavior: 'smooth',
+            block: 'start'
+        });
+    });
     document.querySelectorAll(".nav-project").forEach(button => {
         button.addEventListener("click", () => {
             document.getElementById("projects").scrollIntoView({ 

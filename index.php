@@ -19,14 +19,14 @@
                 <img src="assets/images/logo.png" alt="logo">
                 <div>
                     <h4>Noa RIBOTE</h4>
-                    <p>Lead Developer Full-Stack & DevOps</p>
+                    <p><i class="fa-regular fa-circle-dot"></i>&nbsp;Lead Developer Full-Stack & DevOps</p>
                 </div>
             </div>
             <div class="position-right">
                 <button id="nav-about">À propos</button>
                 <button class="nav-project">Projets</button>
-                <button>Compétences</button>
-                <button>Parcours</button>
+                <button id="nav-skills">Compétences</button>
+                <button id="nav-paths">Parcours</button>
                 <button id="nav-contact" class="speceBTN">Me contacter&nbsp;↗</button>
             </div>
         </nav>
@@ -36,9 +36,9 @@
             <div class="contentLEFT FlexCenter">
                 <h1>Maître de <em>l'information</em> numérique</h1>
                 <p><?php require 'views/description.html' ?></p>
-                <div>
-                    <button class="nav-project">Découvrir mes projets</button>
-                    <button onclick="
+                <div class="position-div">
+                    <button class="speceBTN nav-project">Découvrir mes projets&nbsp;↗</button>
+                    <button class="speceBTN-second" onclick="
                         const pdf = document.createElement('a'); pdf.href = 'public/downloads/RIBOTE--MORAL_Noa_CV_<?= $pdfCV ?>.pdf';
                         pdf.download = 'RIBOTE--MORAL_Noa_CV_<?= $pdfCV ?>.pdf';
                         document.body.appendChild(pdf); pdf.click(); document.body.removeChild(pdf)
@@ -46,6 +46,7 @@
                 </div>
             </div>
             <div class="contentRIGHT FlexCenter">
+                <p class="sideText">Développeur web et chef de projet</p>
                 <div class="modalView">
                     <img src="assets/images/noa/noaribote.webp" alt="RIBOTE--MORAL Noa">
                 </div>
@@ -182,18 +183,47 @@
                 </h1>
             </div>
         </div>
+        <div class="spoty heightAuto notColored FlexCenter" id="skills">
+            <div class="limited" style="position: relative">
+                <h1>Compétences <em>en pratique</em></h1>
+                <br><p>J’apprends en faisant, je progresse en partageant.</p>
 
 
 
+            </div>
+        </div>
+        <div class="spoty FlexCenter">
+            <div class="limited FlexCenter" style="position: relative">
+                <h1 style="text-align: center; font-size: 45px">
+                    <span class="grosseGui">“</span>
+                    Le souci du détail,
+                    <br><em>sans perdre le sens</em>
+                    <span class="mention">
+                        <em>« Un bon projet se remarque par ce qu’on voit, et se confirme lorsqu'on ne remarque plus rien. »</em>
+                        <br><br>—&nbsp;Noa
+                    </span>
+                </h1>
+            </div>
+        </div>
+        <div class="spoty heightAuto notColored FlexCenter" id="paths">
+            <div class="limited" style="position: relative">
+                <h1>Un parcours <em>en mouvement</em></h1>
+                <br><p>Une pratique construite avec le temps, les rencontres et les projets.</p>
 
+
+
+            </div>
+        </div>
     </main>
     <footer class="FlexCenter">
         <section class="limited FlexCenter2">
             <div>
 
 
+
             </div>
             <div>
+
 
 
             </div>

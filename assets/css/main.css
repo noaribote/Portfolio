@@ -14,7 +14,6 @@ main {
 .contentLEFT, .contentRIGHT {
     position: relative;
     height: 550px;
-    border: 1px solid red;
 }
 
 .contentLEFT {
@@ -28,10 +27,50 @@ main {
     line-height: 1.85;
 }
 
+.position-div {
+    position: absolute;
+    bottom: 20px; left: 0;
+}
+
+.contentLEFT button.speceBTN {
+    transition: 0.05s ease-in-out;
+    color: #fff;
+    padding: 10px 15px;
+    margin: 0 5px;
+    font-size: 12px;
+    background: var(--blue);
+    border: none;
+} .contentLEFT button.speceBTN:hover { cursor: pointer; background: var(--darkBlue) }
+
+.contentLEFT button.speceBTN-second {
+    transition: 0.05s ease-in-out;
+    color: var(--muted);
+    padding: 10px 0;
+    margin: 0 20px;
+    font-size: 12px;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid var(--muted);
+} .contentLEFT button.speceBTN-second:hover {
+    cursor: pointer;
+    color: var(--bordeaux);
+    border-color: var(--bordeaux);
+}
+
 .contentRIGHT {
     width: 40%;
     margin-left: 10%;
     right: 0;
+}
+
+.contentRIGHT .sideText {
+    position: absolute;
+    right: 0;
+    top: 70px;
+    writing-mode: vertical-rl;
+    font: 11px var(--mono);
+    letter-spacing: .13em;
+    color: #8a8b86;
 }
 
 .contentRIGHT span {
@@ -157,6 +196,8 @@ main {
 .project-offset-sm { margin-top: 35px; }
 
 .contentGrid a {
+    border: 5px solid transparent;
+    box-shadow: 0 0 10px #80394a3d;
     overflow: hidden;
     display: block;
     height: 80%;
