@@ -24,7 +24,7 @@
             </div>
             <div class="position-right">
                 <button id="nav-about">À propos</button>
-                <button id="nav-project">Projets</button>
+                <button class="nav-project">Projets</button>
                 <button>Compétences</button>
                 <button>Parcours</button>
                 <button id="nav-contact" class="speceBTN">Me contacter&nbsp;↗</button>
@@ -32,9 +32,25 @@
         </nav>
     </header>
     <main class="FlexCenter">
-        <section>
-
-
+        <section class="contentLimited FlexCenter2">
+            <div class="contentLEFT FlexCenter">
+                <h1>Maître de <em>l'information</em> numérique</h1>
+                <p><?php require 'views/description.html' ?></p>
+                <div>
+                    <button class="nav-project">Découvrir mes projets</button>
+                    <button onclick="
+                        const pdf = document.createElement('a'); pdf.href = 'public/downloads/RIBOTE--MORAL_Noa_CV_<?= $pdfCV ?>.pdf';
+                        pdf.download = 'RIBOTE--MORAL_Noa_CV_<?= $pdfCV ?>.pdf';
+                        document.body.appendChild(pdf); pdf.click(); document.body.removeChild(pdf)
+                    ">Consulter mon CV</button>
+                </div>
+            </div>
+            <div class="contentRIGHT FlexCenter">
+                <div class="modalView">
+                    <img src="assets/images/noa/noaribote.webp" alt="RIBOTE--MORAL Noa">
+                </div>
+                <span class="off"><strong>RIBOTE--MORAL Noa</strong>&nbsp;·&nbsp;il / lui</span>
+            </div>
         </section>
         <div class="spoty FlexCenter">
             <div class="limited" style="position: relative">
@@ -42,7 +58,6 @@
                     <h1>Voici un avant-goût de mes <em>musiques favorites</em></h1>
                     <br><p>
                         J'écoute beaucoup de musique quand je fais usage de ma voiture, l'un de mes passe-temps favoris.
-                        Ajoutez-y davantage de bass avec l'amplificateur et vous obtiendrez de quoi faire évader la carrosserie même.
                     </p>
                 </div>
                 <div class="spotyContentRight">
@@ -64,7 +79,7 @@
             <div class="limited FlexCenter2" style="position: relative">
                 <img class="photo1" src="assets/images/noa/noaribote_side.webp" alt="noa ribote moral side">
                 <div class="contre-photo">
-                    <h1>Mes <em>week-ends</em> se résument à...</h1>
+                    <h1>Mes <em>week-ends</em> se résument souvent à...</h1>
                     <ul>
                         <li>Travailler sur moi-même</li>
                         <li>Travailler sur mes projets</li>
@@ -135,6 +150,7 @@
                                 <div class="card '.$constante.$visibility.'" data-project-index="'.$cpt.'">
                                     <a href="'.htmlspecialchars($project[4], ENT_QUOTES, 'UTF-8').'" target="_blank">
                                         <img src="assets/images/project/'.htmlspecialchars($project[3], ENT_QUOTES, 'UTF-8').'.webp" alt="' . htmlspecialchars($name, ENT_QUOTES, 'UTF-8') . '" loading="lazy" decoding="async">
+                                        <div class="FlexCenter animatedArrow">↗</div>
                                     </a>
                                     <h3>
                                         <strong>'.htmlspecialchars($name, ENT_QUOTES, 'UTF-8').'</strong>
@@ -166,6 +182,10 @@
                 </h1>
             </div>
         </div>
+
+
+
+
     </main>
     <footer class="FlexCenter">
         <section class="limited FlexCenter2">

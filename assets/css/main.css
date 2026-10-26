@@ -5,6 +5,68 @@ main {
     z-index: 5;
 }
 
+.contentLimited {
+    position: relative;
+    width: 60%; height: auto;
+    margin-top: 40px;
+}
+
+.contentLEFT, .contentRIGHT {
+    position: relative;
+    height: 550px;
+    border: 1px solid red;
+}
+
+.contentLEFT {
+    width: 50%;
+    left: 0;
+} .contentLEFT h1 {
+    font-size: 100px;
+    font-weight: 500;
+    margin-bottom: 20px;
+} .contentLEFT p {
+    line-height: 1.85;
+}
+
+.contentRIGHT {
+    width: 40%;
+    margin-left: 10%;
+    right: 0;
+}
+
+.contentRIGHT span {
+    position: absolute;
+    bottom: 20px; left: 7.5%;
+}
+
+.modalView {
+    height: 455px; width: 390px;
+    position: relative;
+    overflow: hidden;
+    background: #e5e3dc;
+    border-radius: 190px 190px 5px 5px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    border: 1px solid #d2d0c9;
+    box-shadow: 0 15px 50px #26384c0c;
+} .modalView img {
+    object-fit: contain;
+    object-position: center bottom;
+    height: 93%; width: auto;
+    filter: saturate(0.83);
+}
+
+.modalView::before {
+    content: "";
+    position: absolute;
+    inset: 17px;
+    border: 1px solid #ffffff9e;
+    border-radius: 180px 180px 0 0;
+    z-index: 1;
+    pointer-events: none;
+}
+
 .photo1 {
     height: auto; width: 30%;
     position: relative;
@@ -35,11 +97,15 @@ main {
 }
 
 .off {
-    color: var(--sans);
-    font-size: 11px;
+    font: 11px var(--mono);
     position: absolute;
 } .off .fa-regular {
     color: #80956d;
+}
+
+.off strong {
+    font-weight: 100;
+    color: var(--darkBlue);
 }
 
 .spoty {
@@ -86,10 +152,16 @@ main {
     column-gap: 54px;
     row-gap: 61px;
 }
+
 .project-offset { margin-top: 69px; }
 .project-offset-sm { margin-top: 35px; }
 
-.contentGrid a { overflow: hidden; display: block; height: 80%; }
+.contentGrid a {
+    overflow: hidden;
+    display: block;
+    height: 80%;
+    position: relative;
+}
 .contentGrid img {
     width: 100%; height: 100%;
     object-fit: cover;
@@ -98,6 +170,22 @@ main {
 } .contentGrid a:hover img {
     transform: scale(1.05);
     filter: saturate(1);
+}
+
+.animatedArrow {
+    background: var(--papierClair);
+    color: var(--muted);
+    width: 30px; height: 30px;
+    transition: 0.05s ease-in-out;
+    position: absolute;
+    bottom: 20px; right: 20px;
+    font-size: 20px;
+}
+
+.contentGrid a:hover .animatedArrow {
+    transform: rotate(45deg);
+    background: var(--bordeaux);
+    color: var(--papierClair);
 }
 
 .card h3 {

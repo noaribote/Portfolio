@@ -1,4 +1,6 @@
 <?php
+    $pdfCV = '03-10-26';
+
     $SpotifyHeight = 120;
     $SpotifyWidth = 300;
     $SpotifyMusics = [

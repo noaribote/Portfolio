@@ -47,24 +47,15 @@ body {
 
 h1 {
     font-weight: 500;
-    font-size: 60px;
     font-family: var(--serif);
-    letter-spacing: -2px;
+    font: clamp(62px,7.25vw,100px)/.98 var(--serif);
+    font-size: 60px;
+    letter-spacing: -2.5px;
     color: var(--darkBlue);
 } h1 em {
     font-weight: 500px;
     color: var(--bordeaux);
 }
-
-/* a {
-    color: var(--muted);
-    text-decoration: none;
-    font-family: var(--sans);
-    cursor: pointer;
-} a:hover, a:focus {
-    cursor: pointer;
-    color: var(--bordeaux);
-} */
 
 img, iframe {
     user-select: none;
