@@ -1,4 +1,54 @@
 document.addEventListener('DOMContentLoaded', () => {
+    const projectGrid = document.querySelector('.contentGrid');
+    const showProjectsButton = document.querySelector('.projects-show-more');
+    const githubLink = document.getElementById("GoToGit");
+    if (projectGrid && showProjectsButton) {
+        const hiddenProjects = [...projectGrid.querySelectorAll('.is-hidden-project')];
+        let nextProject = 0;
+        let hasStarted = false;
+        const batchSize = 2;
+        const prefetchDistance = 300;
+
+        const revealNextBatch = () => {
+            const end = Math.min(nextProject + batchSize, hiddenProjects.length);
+            while (nextProject < end) {
+                const project = hiddenProjects[nextProject++];
+                project.classList.remove('is-hidden-project');
+                project.classList.add('project-reveal');
+            }
+            const allProjectsShown = nextProject >= hiddenProjects.length;
+            showProjectsButton.hidden = allProjectsShown;
+            if (githubLink) githubLink.classList.toggle('is-hidden-project', !allProjectsShown);
+        };
+
+        const revealProjectsNearViewport = () => {
+            if (!hasStarted || nextProject >= hiddenProjects.length) return;
+            const nextBatchFirst = hiddenProjects[nextProject];
+            if (nextBatchFirst.getBoundingClientRect().top <= window.innerHeight + prefetchDistance) {
+                revealNextBatch();
+            }
+        };
+
+        let scrollFrame = 0;
+        const scheduleProjectCheck = () => {
+            if (scrollFrame) return;
+            scrollFrame = requestAnimationFrame(() => {
+                scrollFrame = 0;
+                revealProjectsNearViewport();
+            });
+        };
+
+        showProjectsButton.addEventListener('click', () => {
+            hasStarted = true;
+            showProjectsButton.setAttribute('aria-expanded', 'true');
+            revealNextBatch();
+            window.addEventListener('scroll', scheduleProjectCheck, { passive: true });
+            window.addEventListener('resize', scheduleProjectCheck);
+            scheduleProjectCheck();
+            showProjectsButton.classList.add('is-hidden-project');
+        });
+    }
+
     const carousel = document.querySelector('.movie-carousel');
     if (!carousel) return;
 

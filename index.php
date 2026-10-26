@@ -130,10 +130,11 @@
                         $cpt = 0;
                         foreach ($Projects as $name => $project) {
                             $constante = ($cpt % 2 === 0) ? "project-offset-sm" : "project-offset";
+                            $visibility = $cpt >= 4 ? ' is-hidden-project' : '';
                             echo '
-                                <div class="card '.$constante.'">
+                                <div class="card '.$constante.$visibility.'" data-project-index="'.$cpt.'">
                                     <a href="'.htmlspecialchars($project[4], ENT_QUOTES, 'UTF-8').'" target="_blank">
-                                        <img src="assets/images/project/'.htmlspecialchars($project[3], ENT_QUOTES, 'UTF-8').'.webp" alt="' . htmlspecialchars($name, ENT_QUOTES, 'UTF-8') . '">
+                                        <img src="assets/images/project/'.htmlspecialchars($project[3], ENT_QUOTES, 'UTF-8').'.webp" alt="' . htmlspecialchars($name, ENT_QUOTES, 'UTF-8') . '" loading="lazy" decoding="async">
                                     </a>
                                     <h3>
                                         <strong>'.htmlspecialchars($name, ENT_QUOTES, 'UTF-8').'</strong>
@@ -146,20 +147,23 @@
                         }
                     ?>
                 </div>
+                <?php if (count($Projects) > 4): ?>
+                    <button class="toGithub projects-show-more" type="button" aria-expanded="false">Voir tous les projets sélectionnés</button>
+                <?php endif; ?>
             </div>
-            <a class="toGithub" href="https://github.com/noaribote" target="_blank">Voir tous mes projets sur GitHub&nbsp;↗</a>
+            <a id="GoToGit" class="toGithub is-hidden-project" href="https://github.com/noaribote" target="_blank">Voir tous mes projets sur GitHub&nbsp;↗</a>
         </div>
         <div class="spoty FlexCenter">
             <div class="limited FlexCenter" style="position: relative">
-                    <h1 style="text-align: center; font-size: 45px">
-                        <span class="grosseGui">“</span>
-                        L'Intelligence Artificielle agit,
-                        <br><em>l'Homme réfléchit</em>
-                        <span class="mention">
-                            <em>« Parce que seul l'Humain pourra contredire une IA sûre d'elle. »</em>
-                            <br><br>—&nbsp;Noa
-                        </span>
-                    </h1>
+                <h1 style="text-align: center; font-size: 45px">
+                    <span class="grosseGui">“</span>
+                    L'Intelligence Artificielle agit,
+                    <br><em>l'Homme réfléchit</em>
+                    <span class="mention">
+                        <em>« Parce que seul l'Humain pourra contredire une IA sûre d'elle. »</em>
+                        <br><br>—&nbsp;Noa
+                    </span>
+                </h1>
             </div>
         </div>
     </main>
