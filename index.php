@@ -151,11 +151,14 @@
         </div>
         <div class="spoty FlexCenter">
             <div class="limited FlexCenter" style="position: relative">
-                    <h1 style="text-align: center">
+                    <h1 style="text-align: center; font-size: 45px">
                         <span class="grosseGui">“</span>
                         L'Intelligence Artificielle agit,
                         <br><em>l'Homme réfléchit</em>
-                        <span class="mention">—&nbsp;Noa</span>
+                        <span class="mention">
+                            <em>« Parce que seul l'Humain pourra contredire une IA sûre d'elle. »</em>
+                            <br><br>—&nbsp;Noa
+                        </span>
                     </h1>
             </div>
         </div>

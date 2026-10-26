@@ -146,18 +146,26 @@ main {
 
 .grosseGui {
     position: absolute;
-    top: 0; left: 0;
+    top: 70px; left: 100px;
     color: var(--line);
-    font-size: 400px;
+    font-size: 200px;
 }
 
 .mention {
     position: absolute;
     bottom: 0; right: 0;
     color: var(--bordeaux);
-    font-size: 14px;
+    font-size: 11px;
     letter-spacing: 0.5px;
     margin: 70px;
+    margin-right: 100px;
+    max-width: 200px;
+    text-align: left;
+    border-left: 2px solid var(--line);
+    padding-left: 20px;
+} .mention em {
+    font-size: 14px;
+    color: var(--muted);
 }
 
 .rightCenter {
