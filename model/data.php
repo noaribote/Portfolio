@@ -12,18 +12,7 @@
         "track/2VOomzT6VavJOGBeySqaMc?utm_source=generator&si=be0bea7fd0de4548",
         "track/4zD7GnXyl94mNCbyaNw6xf?utm_source=generator&si=f7ba3efbea8b4754"
     ];
-    $Movies = [
-        "oh",
-        "r1",
-        "odyssee",
-        "rdlf",
-        "bb",
-        "tf3",
-        "twd",
-        "rds",
-        "bcs",
-        "jabdm"
-    ];
+    $Movies = [ "oh", "r1", "odyssee", "rdlf", "bb", "tf3", "twd", "rds", "bcs", "jabdm" ];
     $Projects = [
         "ALOUS FRANCE" => ["Site sécurisé de mon entreprise de Développement WEB.", "Application Web", 2026, "alous", "https://www.alous.fr/"],
         "tPlan" => ["Application de gestion de tâches sécurisée.", "Application", 2026, "tplan", "https://github.com/noaribote/tPlan"],
@@ -33,7 +22,20 @@
         "MW4 Concept" => ["Concept d’interface pour le menu du jeu Call of Duty MODERN WARFARE 4.", "Application", 2026, "mw4", "https://github.com/noaribote/mw4-menu"],
         // "Mobile Directory" => ["Reproduction d'un annuaire de contacts sécurisé en liant PHP, SQL et JS.", "Site Web", 2026, "annmob", "https://github.com/noaribote/Mobile-Directory"],
         "NCV1 ModLoader" => ["Le NCV1 ModLoader est un outil de modification pour GTA ONLINE sur PS3, permettant de personnaliser l’expérience de jeu grâce à différentes fonctionnalités et modifications intégrées.", "Modding", 2025, "ncv1", "https://github.com/noaribote/NCV1-ModLoader"],
-        // "The Walking Dead Univers" => ["Projet communautaire autour de l’univers de The Walking Dead.", "Site Web", 2024, "twdu", "https://www.alous.fr/TheWalkingDeadUnivers"],
+        "The Walking Dead Univers" => ["Projet communautaire autour de l’univers de The Walking Dead.", "Site Web", 2024, "twdu", "https://www.alous.fr/TheWalkingDeadUnivers"],
         "Noa_chid's XMB" => ["Noa_chid's XMB est le meilleur site de recherche et de téléchargement de mods.", "Site Web", 2023, "ncxmb", "https://www.noachidxmb.xyz/"]
     ];
+    $Skills = ["Autonome", "Responsable", "À l'écoute", "Attentif", "Soigneux", "Assidu"];
+    $SkillsDomainesTechniques = [
+        "Web" => ["PHP", "HTML", "CSS", "APACHE"],
+        "JavaScript" => ["JavaScript", "Electron.js", "Node.js", "NPM", "JSON", "jQuery"],
+        "Python & Données" => ["Python", "Flask", "phpMyAdmin", "SQL", "SQLiteStudio", "MySQL", "CSV"],
+        "Développement de Jeux" => ["C++", "Moddeur PlayStation"],
+        "Outils & Environnements" => ["Trello", "Git", "Github", "GitLab", "OVHcloud", "Netlify", "Vercel", "Postman", "cdnjs", "Cloudflare", "Unity", "WSL", "PowerShell", "FileZilla", "LibreOffice", "Microsoft 365", "Oracle VirtualBox", "Visual Studio", "Visual Studio Code"],
+        "Systèmes d'exploitation" => ["Windows 10, 11", "Linux", "LTSP", "Ubuntu", "Debian", "Android"],
+        "Design" => ["Canva", "Figma", "GIMP", "Picsart", "Font Awesome", "CoreUI", "Google Fonts", "SVG"],
+        "Intelligences artificielles" => ["ChatGPT", "Codex", "Claude", "Gemini", "Mistral AI"],
+        "Communication" => ["YouTube", "TikTok", "Instagram", "Facebook", "Twitter", "LinkedIn", "Pinterest", "Discord", "Kick", "Twitch"],
+        "Autre" => ["Markdown", "Architecture MVC", "VBScript", "Script Batch", "Google Ads", "SEO", "SMO"]
+    ]
 ?>
