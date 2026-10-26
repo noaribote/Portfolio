@@ -282,6 +282,6 @@ main {
     border-radius: 50%;
     position: absolute;
     top: 5px; right: 5px;
-    background: var(--darkBlue);
+    background: var(--blue);
     text-align: center;
 }

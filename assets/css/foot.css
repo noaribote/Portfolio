@@ -52,5 +52,6 @@ footer section#end {
 
 .footerBAS button:hover {
     color: var(--bordeaux);
+    border-color: var(--bordeaux);
     cursor: pointer;
 }

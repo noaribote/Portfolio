@@ -14,9 +14,21 @@
 </head>
 <body>
     <header class="FlexCenter">
-        <nav class="limited">
-
-
+        <nav class="limited FlexCenter2" style="position: relative">
+            <div class="position-left FlexCenter2">
+                <img src="assets/images/logo.png" alt="logo">
+                <div>
+                    <h4>Noa RIBOTE</h4>
+                    <p>Lead Developer Full-Stack & DevOps</p>
+                </div>
+            </div>
+            <div class="position-right">
+                <button id="nav-about">À propos</button>
+                <button id="nav-project">Projets</button>
+                <button>Compétences</button>
+                <button>Parcours</button>
+                <button id="nav-contact" class="speceBTN">Me contacter&nbsp;↗</button>
+            </div>
         </nav>
     </header>
     <main class="FlexCenter">
@@ -66,9 +78,9 @@
         <div class="spoty FlexCenter">
             <div class="limited" style="position: relative">
                 <div class="spotyContent">
-                    <h1>Mon TOP 5 <em>ciné</em></h1>
+                    <h1>Soirée <em>ciné ?</em></h1>
                     <br><p>
-                        Vrai cinéphile amateur depuis tout jeune. 
+                        Vrai cinéphile amateur depuis tout jeune. Mon TOP 10 est sûrement discutable mais je le défendrai corps et âme.
                     </p>
                 </div>
                 <div class="movie-carousel" aria-label="Classement des films">
@@ -98,13 +110,13 @@
                     </button>
                 </div>
                 <div class="movie-pagination" role="group" aria-label="Position dans le classement">
-                    <?php for ($rank = 1; $rank <= 5; $rank++): ?>
+                    <?php for ($rank = 1; $rank <= $place; $rank++): ?>
                         <button type="button" class="movie-dot<?= $rank === 1 ? ' is-active' : '' ?>" aria-label="Film numero <?= $rank ?>" aria-current="<?= $rank === 1 ? 'true' : 'false' ?>"></button>
                     <?php endfor; ?>
                 </div>
             </div>
         </div>
-        <div class="spoty heightAuto notColored FlexCenter">
+        <div class="spoty heightAuto notColored FlexCenter" id="projects">
             <div class="limited" style="position: relative">
                 <div class="spotyContent">
                     <h1><em>Projets</em> sélectionnés</h1>
@@ -139,7 +151,7 @@
         </div>
         <div class="spoty FlexCenter">
             <div class="limited FlexCenter" style="position: relative">
-                    <h1>
+                    <h1 style="text-align: center">
                         <span class="grosseGui">“</span>
                         L'Intelligence Artificielle agit,
                         <br><em>l'Homme réfléchit</em>
@@ -149,9 +161,15 @@
         </div>
     </main>
     <footer class="FlexCenter">
-        <section class="limited">
+        <section class="limited FlexCenter2">
+            <div>
 
 
+            </div>
+            <div>
+
+
+            </div>
         </section>
         <section id="end" class="FlexCenter">
             <div class="limited FlexCenter" style="position: relative">
@@ -165,4 +183,5 @@
     </footer>
 </body>
 <script src="controller/main.js"></script>
+<script src="controller/nav.js"></script>
 </html>
