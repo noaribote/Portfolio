@@ -1,4 +1,6 @@
-<?php require_once 'model/data.php' ?>
+<?php
+    require_once 'model/data.php';
+?>
 <!DOCTYPE html>
 <html lang="fr-FR">
 <head>
@@ -10,8 +12,18 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="icon" type="image/x-icon" href="assets/images/logo.ico">
     <link rel="stylesheet" href="assets/css/style.css">
+    <?php if (isset($_GET['display']) && $_GET['display'] === 'mentions'): ?>
+        <style>
+            body { overflow: hidden !important; }
+        </style>
+    <?php endif; ?>
 </head>
 <body>
+    <?php if (isset($_GET['display']) && $_GET['display'] === 'mentions'): ?>
+        <div class="MentionsContent FlexCenter">
+            <?php require_once 'views/mentions.html'; ?>
+        </div>
+    <?php else: ?>
     <header class="FlexCenter">
         <nav class="limited FlexCenter2" style="position: relative">
             <div class="position-left FlexCenter2">
@@ -220,8 +232,6 @@
                 <h1>Un projet en tête ?<br><em>Parlons-en.</em></h1>
                 <p>Une idée à concrétiser, une équipe à rejoindre ou simplement l’envie d’échanger ? Écrivez-moi, je vous répondrai avec plaisir.</p>
                 <a href="mailto:noaribotemoral@gmail.com" target="_blank" class="footerButton">M'écrire&nbsp;↗</a>
-
-
             </div>
             <div id="footerRIGHT">
                 <a href="mailto:noaribotemoral@gmail.com" target="_blank" class="displays notd">
@@ -246,11 +256,14 @@
                 <p class="footerBAS">
                     <span><img src="assets/images/logo.png" alt="logo"></span>
                     <span id="copyRightAnnee"></span>
+                    <span class="style_buttons" id="mentionsBTN">&nbsp;·&nbsp;<button>Mentions légales</button></span>
+                    <span class="style_buttons" id="sourceBTN">&nbsp;·&nbsp;<button>Code source du site</button></span>
                     <span><button id="toTOPButton-footer">Haut de page&nbsp;↗</button></span>
                 </p>
             </div>
         </section>
     </footer>
+    <?php endif; ?>
 </body>
 <script src="controller/main.js"></script>
 <script src="controller/nav.js"></script>
