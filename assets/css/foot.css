@@ -25,6 +25,19 @@ footer section#end {
     background: var(--papierClair);
 }
 
+footer h1 { color: var(--papierClair); }
+footer h1 em { color: #d9aab2; }
+footer #footerLEFT p { color: var(--line); font: 11px var(--mono); line-height: 20px; margin: 20px 0; }
+
+#footerLEFT, #footerRIGHT {
+    position: absolute;
+    max-width: 40%;
+    justify-content: center;
+    margin-top: -80px;
+}
+#footerLEFT { left: 0; }
+#footerRIGHT { right: 0; }
+
 .footerBAS {
     font-size: 11px;
     font-family: var(--mono);
@@ -55,4 +68,72 @@ footer section#end {
     color: var(--bordeaux);
     border-color: var(--bordeaux);
     cursor: pointer;
+}
+
+#footerRIGHT a {
+    text-decoration: none;
+    color: var(--papierFonce);
+    font: 16px var(--serif);
+    transition: 0.05s ease-in-out;
+    position: relative;
+}
+
+#footerRIGHT a address {
+    width: 600px;
+    display: flex;
+}
+
+#footerRIGHT a:not(.notd, .bannerPositionInstagram):hover {
+    cursor: pointer;
+    color: #fff;
+    transform: scale(1.1);
+}
+
+a span {
+    position: absolute;
+    right: 0;
+}
+
+#footerRIGHT i {
+    font-size: 20px;
+    margin: 0 10px;
+}
+
+#footerRIGHT hr {
+    margin: 10px 0;
+    color: rgba(255, 255, 255, 0.336);
+}
+
+.displays {
+    display: flex; align-items: center;
+}
+
+.bannerPositionInstagram {
+    display: block;
+    width: 104px; height: 40px;
+    background-position-y: calc(100% - (100% / 2));
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('../images/logo/banners.webp');
+    border-radius: 5px;
+    filter: saturate(.75);
+} .bannerPositionInstagram:hover {
+    cursor: pointer;
+    filter: saturate(1);
+}
+
+.footerButton {
+    background: var(--papierClair);
+    color: var(--darkBlue);
+    padding: 10px 15px;
+    font-size: 12px;
+    border: none;
+    transform: scale(1);
+    text-decoration: none;
+    transition: 0.05s ease-in-out;
+    width: min-content;
+    display: block;
+} .footerButton:hover {
+    cursor: pointer;
+    transform: scale(1.03);
 }

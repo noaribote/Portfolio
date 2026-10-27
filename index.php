@@ -55,7 +55,7 @@
         <div class="spoty FlexCenter">
             <div class="limited" style="position: relative">
                 <div class="spotyContent">
-                    <h1>Voici un avant-goût de mes <em>musiques favorites</em></h1>
+                    <h1>Ici, un avant-goût de mes <em>musiques favorites</em></h1>
                     <br><p>
                         J'écoute beaucoup de musique quand je fais usage de ma voiture, l'un de mes passe-temps favoris.
                     </p>
@@ -93,9 +93,9 @@
         <div class="spoty FlexCenter">
             <div class="limited" style="position: relative">
                 <div class="spotyContent">
-                    <h1>Soirée <em>ciné ?</em></h1>
+                    <h1>Mes chefs-d'œuvre <em>cinématographique</em></h1>
                     <br><p>
-                        Vrai cinéphile amateur depuis tout jeune. Mon TOP 10 est sûrement discutable mais je le défendrai corps et âme.
+                        Vrai cinéphile amateur depuis tout jeune. Tant que je n'aurai pas de sensations devant l'œuvre, je n'accrocherai pas.
                     </p>
                 </div>
                 <div class="movie-carousel" aria-label="Classement des films">
@@ -215,16 +215,30 @@
         </div>
     </main>
     <footer class="FlexCenter">
-        <section class="limited FlexCenter2">
-            <div>
-
+        <section class="limited FlexCenter2" style="position: relative">
+            <div id="footerLEFT">
+                <h1>Un projet en tête ?<br><em>Parlons-en.</em></h1>
+                <p>Une idée à concrétiser, une équipe à rejoindre ou simplement l’envie d’échanger ? Écrivez-moi, je vous répondrai avec plaisir.</p>
+                <a href="mailto:noaribotemoral@gmail.com" target="_blank" class="footerButton">M'écrire&nbsp;↗</a>
 
 
             </div>
-            <div>
-
-
-
+            <div id="footerRIGHT">
+                <a href="mailto:noaribotemoral@gmail.com" target="_blank" class="displays notd">
+                    <address>noaribotemoral@gmail.com</address>
+                    <span>↗</span>
+                </a>
+                <hr>
+                <a href="tel:+336 11 27 02 26" target="_blank" class="displays notd">
+                    <address>06 11 27 02 26</address>
+                    <span>↗</span>
+                </a>
+                <hr>
+                <div class="displays">
+                    <a href="https://www.instagram.com/noaribote" target="_blank" class="bannerPositionInstagram"></a>
+                    <a href="https://www.linkedin.com/in/ribote-noa" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://github.com/noaribote" target="_blank"><i class="fa-brands fa-github"></i></a>
+                </div>
             </div>
         </section>
         <section id="end" class="FlexCenter">

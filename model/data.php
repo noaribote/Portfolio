@@ -1,8 +1,7 @@
 <?php
     $pdfCV = '03-10-26';
 
-    $SpotifyHeight = 120;
-    $SpotifyWidth = 300;
+    $SpotifyHeight = 120; $SpotifyWidth = 300;
     $SpotifyMusics = [
         "track/7ySUcLPVX7KudhnmNcgY2D?utm_source=generator&si=a9e5e61514124840",
         "album/77HpsjuhHrcZhIp0PyiROw?utm_source=generator&si=d71c5669824d482c",
@@ -12,7 +11,7 @@
         "track/2VOomzT6VavJOGBeySqaMc?utm_source=generator&si=be0bea7fd0de4548",
         "track/4zD7GnXyl94mNCbyaNw6xf?utm_source=generator&si=f7ba3efbea8b4754"
     ];
-    $Movies = [ "oh", "r1", "odyssee", "rdlf", "bb", "tf3", "twd", "rds", "bcs", "jabdm" ];
+    $Movies = ["oppenheimer", "rogueone", "odyssee", "andor", "transformers3", "breakingbad", "starwars7", "thewalkingdead", "bettercallsaul", "interstellar"];
     $Projects = [
         "ALOUS FRANCE" => ["Site sécurisé de mon entreprise de Développement WEB.", "Application Web", 2026, "alous", "https://www.alous.fr/"],
         "tPlan" => ["Application de gestion de tâches sécurisée.", "Application", 2026, "tplan", "https://github.com/noaribote/tPlan"],
