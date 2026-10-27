@@ -311,6 +311,164 @@ main {
     color: var(--muted);
 }
 
+#paths > .limited {
+    padding: 80px 0;
+    box-sizing: border-box;
+}
+
+#paths > .limited > p {
+    margin-bottom: 34px;
+}
+
+.paths-filter {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 0 0 36px 42px;
+}
+
+.paths-filter button {
+    padding: 9px 13px;
+    border: 1px solid var(--line);
+    color: var(--muted);
+    background: var(--papierClair);
+    font: 11px var(--mono);
+    cursor: pointer;
+    transition: .05s ease-in-out,
+}
+
+.paths-filter button:hover,
+.paths-filter button.is-active {
+    color: var(--papierClair);
+    background: var(--blue);
+}
+
+.paths-filter button:focus-visible {
+    outline: 2px solid var(--bordeaux);
+    outline-offset: 3px;
+}
+
+.paths-timeline {
+    list-style: none;
+    position: relative;
+    display: grid;
+    gap: 24px;
+    padding: 4px 0 4px 42px;
+}
+
+.paths-timeline::before {
+    content: "";
+    position: absolute;
+    top: 8px;
+    bottom: 0;
+    left: 10px;
+    width: 1px;
+    background: var(--line);
+}
+
+.paths-timeline::after {
+    content: "";
+    position: absolute;
+    top: calc(100% - 1px);
+    left: 10px;
+    width: 1px;
+    height: 48px;
+    background: linear-gradient(
+        to bottom,
+        var(--line),
+        transparent
+    );
+}
+
+.paths-item {
+    position: relative;
+    animation: path-enter 0.55s both;
+    animation-delay: calc(
+        min(var(--path-index), 8) * 55ms
+    );
+}
+
+.paths-item[hidden] {
+    display: none;
+}
+
+.paths-marker {
+    position: absolute;
+    top: 24px; left: -38px;
+    width: 11px; height: 11px;
+    border: 2px solid var(--bordeaux);
+    border-radius: 50%;
+    background: var(--papierClair);
+    box-shadow: 0 0 0 5px var(--papierClair);
+    z-index: 1;
+}
+
+.paths-card {
+    padding: 22px 24px;
+    border: 1px solid var(--line);
+    background: var(--papierClair);
+    transition: .05s ease-in-out;
+}
+
+.paths-card:hover {
+    background: var(--papierFonce);
+    transform: scale(1.01);
+}
+
+.paths-card-heading {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.paths-card-heading > img {
+    user-select: none;
+    pointer-events: none;
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+    border: 1px solid var(--line);
+    background: var(--papierClair);
+    padding: 4px;
+    box-sizing: border-box;
+}
+
+.paths-card-title {
+    flex: 1;
+    min-width: 0;
+}
+
+.paths-card-title h2 {
+    color: var(--darkBlue);
+    font: 24px / 1.15 var(--serif);
+}
+
+.paths-card-title p,
+.paths-date,
+.paths-place {
+    color: var(--muted);
+    font: 11px / 1.6 var(--mono);
+}
+
+.paths-date {
+    color: var(--bordeaux);
+    text-align: right;
+}
+
+.paths-description {
+    margin: 18px 0 0 64px;
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+.paths-place {
+    margin: 12px 0 0 64px;
+}
+
+.paths-place i {
+    color: var(--bordeaux);
+}
+
 .rightCenter {
     position: absolute;
     inset: 0 auto 0 0;

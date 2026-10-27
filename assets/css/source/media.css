@@ -2,3 +2,47 @@
     .movie-carousel, .movie-pagination { width: 55%; }
     .movie-viewport { left: 36px; right: 36px; }
 }
+
+@media (max-width: 700px) {
+    #paths > .limited {
+        width: 88%;
+        padding: 54px 0;
+    } #paths > .limited > h1 { font-size: clamp(42px, 10vw, 60px); }
+
+    #paths > .limited > p {
+        width: 100%;
+        line-height: 1.7;
+    }
+    .paths-filter { margin-left: 30px; gap: 6px; }
+
+    .paths-filter button {
+        padding: 8px 10px;
+        font-size: 10px;
+    }
+    .paths-timeline { padding-left: 30px; gap: 16px; }
+    .paths-timeline::before, .paths-timeline::after { left: 7px; }
+    .paths-timeline::after { height: 40px; }
+
+    .paths-marker {
+        left: -28px;
+        width: 9px; height: 9px;
+    }
+
+    .paths-card { padding: 16px; }
+
+    .paths-card-heading {
+        align-items: flex-start;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+    .paths-card-heading > img {
+        width: 40px; height: 40px;
+    }.paths-card-title h2 { font-size: 20px; }
+
+    .paths-date {
+        flex-basis: 100%;
+        text-align: left;
+        margin-left: 50px;
+    }
+    .paths-description, .paths-place { margin-left: 0; }
+}

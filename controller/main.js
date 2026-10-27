@@ -92,4 +92,25 @@ document.addEventListener('DOMContentLoaded', () => {
 
     document.getElementById("copyRightAnnee").innerHTML = "© " + new Date().getFullYear() + " RIBOTE--MORAL Noa";
     document.getElementById("toTOPButton-footer").addEventListener("click", () => { window.scrollTo({ top: 0, behavior: 'smooth' }) });
+
+    document.querySelectorAll('[data-path-filter]').forEach((button) => {
+        button.addEventListener('click', () => {
+            const filter = button.dataset.pathFilter;
+
+            document.querySelectorAll('.paths-item').forEach((item) => {
+                const category = item.dataset.pathCategory;
+                const visible =
+                    filter === 'all' ||
+                    category === filter ||
+                    (filter === 'jobs' && category !== 'exam');
+                item.hidden = !visible;
+            });
+
+            document.querySelectorAll('[data-path-filter]').forEach((option) => {
+                const active = option === button;
+                option.classList.toggle('is-active', active);
+                option.setAttribute('aria-pressed', String(active));
+            });
+        });
+    });
 });

@@ -198,7 +198,6 @@
             <div class="limited" style="position: relative">
                 <h1>Compétences <em>en pratique</em></h1>
                 <br><p>J’apprends en faisant, je progresse en partageant.</p>
-
                 <h4>Domaines généraux</h4>
                 <div class="skillsContent speciSkillsContent">
                     <?php
@@ -244,9 +243,50 @@
             <div class="limited" style="position: relative">
                 <h1>Un parcours <em>en mouvement</em></h1>
                 <br><p>Une pratique construite avec le temps, les rencontres et les projets.</p>
-
-
-
+                <?php
+                    $pathEntries = [];
+                    foreach ($jobs as $entry) { $pathEntries[] = ['category' => 'domain', 'data' => $entry]; }
+                    foreach ($autreJobs as $entry) { $pathEntries[] = ['category' => 'other-job', 'data' => $entry]; }
+                    foreach ($examens as $entry) { $pathEntries[] = ['category' => 'exam', 'data' => $entry]; }
+                ?>
+                <div class="paths-filter" role="group" aria-label="Filtrer le parcours">
+                    <button type="button" class="is-active" data-path-filter="all" aria-pressed="true">Tout</button>
+                    <button type="button" data-path-filter="jobs" aria-pressed="false">Emplois</button>
+                    <button type="button" data-path-filter="domain" aria-pressed="false">Emplois du milieu</button>
+                    <button type="button" data-path-filter="other-job" aria-pressed="false">Autres emplois</button>
+                    <button type="button" data-path-filter="exam" aria-pressed="false">Examens & Certifications</button>
+                </div>
+                <ol class="paths-timeline" aria-label="Parcours professionnel et certifications">
+                    <?php
+                        foreach ($pathEntries as $index => $pathEntry):
+                            $entry = $pathEntry['data'];
+                            $isExam = $pathEntry['category'] === 'exam';
+                            $title = $entry[0] ?? '';
+                            $logo = $entry[1] ?? '';
+                            $organization = $entry[2] ?? '';
+                            $type = $isExam ? '' : ($entry[3] ?? '');
+                            $description = $isExam ? ($entry[3] ?? '') : ($entry[4] ?? '');
+                            $date = $isExam ? ($entry[4] ?? '') : ($entry[5] ?? '');
+                            $place = $isExam ? ($entry[5] ?? '') : ($entry[6] ?? '');
+                            $safe = static fn($value) => htmlspecialchars((string)$value, ENT_QUOTES, 'UTF-8');
+                    ?>
+                    <li class="paths-item" data-path-category="<?= $safe($pathEntry['category']) ?>" style="--path-index: <?= (int)$index ?>">
+                        <span class="paths-marker" aria-hidden="true"></span>
+                        <article class="paths-card">
+                            <div class="paths-card-heading">
+                                <img src="assets/images/logo/<?= $safe($logo) ?>.webp" alt="" loading="lazy">
+                                <div class="paths-card-title">
+                                    <h2><?= $safe($title) ?></h2>
+                                    <p><?= $safe($organization) ?><?= $type !== '' ? ' · '.$safe($type) : '' ?></p>
+                                </div>
+                                <span class="paths-date"><?= $safe($date) ?></span>
+                            </div>
+                            <?php if ($description !== ''): ?><p class="paths-description"><?= $safe($description) ?></p><?php endif; ?>
+                            <?php if ($place !== ''): ?><p class="paths-place"><i class="fa-solid fa-location-dot" aria-hidden="true"></i> <?= $safe($place) ?></p><?php endif; ?>
+                        </article>
+                    </li>
+                    <?php endforeach; ?>
+                </ol>
             </div>
         </div>
     </main>
