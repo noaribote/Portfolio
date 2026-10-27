@@ -199,8 +199,32 @@
                 <h1>Compétences <em>en pratique</em></h1>
                 <br><p>J’apprends en faisant, je progresse en partageant.</p>
 
-
-
+                <h4>Domaines généraux</h4>
+                <div class="skillsContent speciSkillsContent">
+                    <?php
+                        $compteurSkills = 1;
+                         $main = sprintf('%02d', $compteurSkills);
+                        echo '<div><span>'.htmlspecialchars($main, ENT_QUOTES, 'UTF-8').'</span><h2>Compétences personnelles</h2><ul>';
+                        foreach ($Skills as $skill) {
+                            $compteurSkills++;
+                            echo '<li>'.htmlspecialchars($skill, ENT_QUOTES, 'UTF-8').'</li>';
+                        }
+                        echo '</ul></div>';
+                    ?>
+                </div>
+                <h4>Domaines techniques</h4>
+                <div class="skillsContent">
+                    <?php
+                        $compteurSkills = 0;
+                        foreach ($SkillsDomainesTechniques as $skill => $skillstech) {
+                            $compteurSkills++;
+                            $main = sprintf('%02d', $compteurSkills);
+                            echo '<div><span>'.htmlspecialchars($main, ENT_QUOTES, 'UTF-8').'</span><h2>'.htmlspecialchars($skill, ENT_QUOTES, 'UTF-8').'</h2><ul>';
+                            foreach ($skillstech as $skills) { echo '<li>'.htmlspecialchars($skills, ENT_QUOTES, 'UTF-8').'</li>'; }
+                            echo '</ul></div>';
+                        }
+                    ?>
+                </div>
             </div>
         </div>
         <div class="spoty FlexCenter">

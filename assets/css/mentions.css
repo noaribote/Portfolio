@@ -6,6 +6,8 @@
     z-index: 999 !important;
 }
 
+.mentions *:not(.fa-regular) { font-style: italic; font-family: var(--serif); }
+
 .mentions {
     width: 60%; height: 80%;
     position: absolute;
@@ -18,9 +20,7 @@
 }
 
 .mentions h2 {
-    font-style: italic;
     color: var(--darkBlue);
-    font-family: var(--serif);
     margin: 20px 0 0 10px;
 }
 
@@ -50,4 +50,13 @@
     background: var(--blue);
     color: var(--papierClair);
     cursor: pointer;
+}
+
+.mentions img {
+    pointer-events: none;
+    user-select: none;
+    height: auto; width: 280px;
+    padding: 40px;
+    position: absolute;
+    right: 0;
 }
