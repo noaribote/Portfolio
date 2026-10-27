@@ -1,5 +1,5 @@
 <div align="center">
-  <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:80394a,50:80394a,100:80394a&height=auto&section=header" alt="Profile banner"/>
+  <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:294668,50:294668,100:294668&height=auto&section=header" alt="Profile banner"/>
   <br/>
   <div style="margin:20px 0" align="center">
     <img src="https://skillicons.dev/icons?i=php,html,css,js,nodejs,git,github,vscode,windows&theme=dark&perline=10" alt="Technology stack"/>
