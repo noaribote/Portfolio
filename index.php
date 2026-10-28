@@ -259,9 +259,9 @@
                     foreach ($examens as $entry) { $pathEntries[] = ['category' => 'exam', 'data' => $entry]; }
                 ?>
                 <div class="paths-filter" role="group" aria-label="Filtrer le parcours">
-                    <button type="button" class="is-active" data-path-filter="all" aria-pressed="true">Tout</button>
+                    <button type="button" data-path-filter="all" aria-pressed="false">Tout</button>
                     <button type="button" data-path-filter="jobs" aria-pressed="false">Emplois</button>
-                    <button type="button" data-path-filter="domain" aria-pressed="false">Emplois du milieu</button>
+                    <button type="button" class="is-active" data-path-filter="domain" aria-pressed="true">Emplois du milieu</button>
                     <button type="button" data-path-filter="other-job" aria-pressed="false">Autres emplois</button>
                     <button type="button" data-path-filter="exam" aria-pressed="false">Examens & Certifications</button>
                 </div>
