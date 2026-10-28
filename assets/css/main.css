@@ -23,13 +23,16 @@ main {
     font-size: 100px;
     font-weight: 500;
     margin-bottom: 20px;
+    opacity: 0; transform: translateX(-20px); animation: appear-left .65s forwards;
 } .contentLEFT p {
     line-height: 1.85;
+    opacity: 0; transform: translateX(-20px); animation: appear-left .65s forwards;
 }
 
 .position-div {
     position: absolute;
     bottom: 20px; left: 0;
+    opacity: 0; transform: translateY(20px); animation: appear-up .65s forwards;
 }
 
 .contentLEFT button.speceBTN {
@@ -71,6 +74,7 @@ main {
     font: 11px var(--mono);
     letter-spacing: .13em;
     color: #8a8b86;
+    opacity: 0; transform: translateX(20px); animation: appear-right .65s forwards;
 }
 
 .contentRIGHT span {
@@ -89,6 +93,7 @@ main {
     align-items: flex-end;
     border: 1px solid #d2d0c9;
     box-shadow: 0 15px 50px #26384c0c;
+    opacity: 0; transform: scale(.96); animation: appear-scale .65s forwards;
 } .modalView img {
     object-fit: contain;
     object-position: center bottom;
@@ -114,6 +119,7 @@ main {
     box-shadow: 0 0 10px #80394a3d;
     transition: 0.2s ease-in-out;
     transform: rotate(-3deg);
+    opacity: 0; transform: translateX(-20px); animation: appear-left .65s forwards;
 } .photo1:hover { transform: rotate(-2deg); cursor: grab; }
 
 .contre-photo {
@@ -121,6 +127,7 @@ main {
     position: relative;
     right: 0;
     margin-left: 10%;
+    opacity: 0; transform: translateX(20px); animation: appear-right .65s forwards;
 }
 
 .contre-photo ul { margin: 50px }
@@ -147,6 +154,8 @@ main {
     color: var(--darkBlue);
 }
 
+.contentRIGHT .off { opacity: 0; transform: translateX(20px); animation: appear-right .65s forwards; }
+
 .spoty {
     background: var(--papierFonce);
     width: 100%; height: 400px;
@@ -164,8 +173,8 @@ main {
     position: absolute;
     top: 70px; left: 0;
     width: calc(100% - 400px - 50px);
-}
-.spoty p { width: 70%; }
+} .spotyContent h1 { opacity: 0; transform: translateY(20px); animation: appear-up .65s forwards; }
+.spoty p { width: 70%; opacity: 0; transform: translateY(20px); animation: appear-up .65s forwards; }
 .spotyContentRight {
     --heightWithPadd: 40px;
     margin: var(--heightWithPadd) 0;
@@ -229,6 +238,8 @@ main {
     color: var(--papierClair);
 }
 
+.card { opacity: 0; transform: translateY(20px); animation: appear-up .65s forwards; }
+
 .card h3 {
     width: 100%;
     margin-top: 10px;
@@ -284,6 +295,7 @@ main {
     border-right: 0;
     font-family: inherit;
     cursor: pointer;
+    opacity: 0; transform: translateY(20px); animation: appear-up .65s forwards;
 }
 .projects-show-more [hidden] { display: none}
 
@@ -292,6 +304,7 @@ main {
     top: 70px; left: 100px;
     color: var(--line);
     font-size: 200px;
+    opacity: 0; transform: scale(.96); animation: appear-scale .65s forwards;
 }
 
 .mention {
@@ -306,6 +319,7 @@ main {
     text-align: left;
     border-left: 2px solid var(--line);
     padding-left: 20px;
+    opacity: 0; transform: translateX(20px); animation: appear-right .65s forwards;
 } .mention em {
     font-size: 14px;
     color: var(--muted);
@@ -316,15 +330,17 @@ main {
     box-sizing: border-box;
 }
 
-#paths > .limited > p {
-    margin-bottom: 34px;
-}
+#paths > .limited > p { margin-bottom: 34px; }
+
+#paths h1 { opacity: 0; transform: translateY(20px); animation: appear-up .65s forwards; }
+#paths p { opacity: 0; transform: translateY(20px); animation: appear-up .65s forwards; }
 
 .paths-filter {
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
     margin: 0 0 36px 42px;
+    opacity: 0; transform: translateY(20px); animation: appear-up .65s forwards;
 }
 
 .paths-filter button {
@@ -382,10 +398,7 @@ main {
 
 .paths-item {
     position: relative;
-    animation: path-enter 0.55s both;
-    animation-delay: calc(
-        min(var(--path-index), 8) * 55ms
-    );
+    opacity: 0; transform: translateY(20px); animation: appear-up .65s forwards;
 }
 
 .paths-item[hidden] {
@@ -491,10 +504,9 @@ main {
 
 .movie-carousel {
     position: absolute;
-    top: 0;
-    right: 0;
-    width: 55%;
-    height: 100%;
+    top: 0; right: 0;
+    width: 55%; height: 100%;
+    opacity: 0; transform: translateX(20px); animation: appear-right .65s forwards;
 }
 
 .movie-nav {
@@ -545,6 +557,7 @@ main {
     display: flex;
     justify-content: center;
     gap: 10px;
+    opacity: 0; transform: translateY(20px); animation: appear-up .65s forwards;
 }
 
 .movie-dot {
@@ -574,6 +587,7 @@ main {
     height: 300px; min-width: 210px;
     max-width: 210px;
     margin: 0 10px;
+    opacity: 0; transform: scale(.96); animation: appear-scale .65s forwards;
 }
 
 .movie-poster img {
@@ -595,11 +609,15 @@ main {
     text-align: center;
 }
 
+#skills h1 { opacity: 0; transform: translateY(20px); animation: appear-up .65s forwards; }
+#skills p { opacity: 0; transform: translateY(20px); animation: appear-up .65s forwards; }
+
 #skills h4 {
     margin: 40px 0;
     color: var(--bordeaux);
     font-weight: 500;
     font-family: var(--mono);
+    opacity: 0; transform: translateY(20px); animation: appear-up .65s forwards;
 }
 
 .skillsContent {
@@ -613,6 +631,12 @@ main {
     grid-template-columns: repeat(1, 1fr);
 } .speciSkillsContent div { min-height: 70px !important; }
 
+.langues {
+    font: 11px var(--serif);
+    font-style: italic;
+    margin-top: 10px;
+} .langues span { margin: 0 20px 0 0; }
+
 .skillsContent div {
     padding: 20px;
     position: relative;
@@ -620,6 +644,7 @@ main {
     border-right: 1px solid var(--line);
     transition: .05s ease-in-out;
     min-height: 170px;
+    opacity: 0; transform: translateY(20px); animation: appear-up .65s forwards;
 }
 
 .skillsContent div:hover {

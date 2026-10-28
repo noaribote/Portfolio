@@ -215,6 +215,11 @@
                         echo '</ul></div>';
                     ?>
                 </div>
+                <p class="langues">
+                    <span>Français&nbsp;·&nbsp;Maternelle</span>
+                    <span>Anglais&nbsp;·&nbsp;B2+</span>
+                    <span>Espagnol&nbsp;·&nbsp;A1+</span>
+                </p>
                 <h4>Domaines techniques</h4>
                 <div class="skillsContent">
                     <?php

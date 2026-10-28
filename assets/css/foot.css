@@ -35,8 +35,8 @@ footer #footerLEFT p { color: var(--line); font: 11px var(--mono); line-height: 
     justify-content: center;
     margin-top: -80px;
 }
-#footerLEFT { left: 0; }
-#footerRIGHT { right: 0; }
+#footerLEFT { left: 0; opacity: 0; transform: translateX(-20px); animation: appear-left .65s forwards; }
+#footerRIGHT { right: 0; opacity: 0; transform: translateX(20px); animation: appear-right .65s forwards; }
 
 .footerBAS {
     font-size: 11px;
