@@ -30,4 +30,17 @@ window.addEventListener("DOMContentLoaded", () => {
     document.getElementById("sourceBTN").addEventListener('click', () => { window.open('https:/'+'/'+'github.com/noaribote/Portfolio', '_blank'); });
     document.getElementById("nav-about").addEventListener("click", () => { window.scrollTo({ top: 100, behavior: 'smooth' }) });
 
+    document.getElementById("responsiveNAV").addEventListener('click', () => {
+        document.getElementById("ResponsiveDisplays").classList.add("responsivenavbar");
+        document.getElementById("onlyCloseResponsive").style.display = "block";
+        document.getElementById("responsiveNAV").style.display = "none";
+    });
+
+    document.querySelectorAll(".responsiveOpac").forEach(btn => {
+        btn.addEventListener('click', () => {
+            document.getElementById("ResponsiveDisplays").classList.remove("responsivenavbar");
+            document.getElementById("onlyCloseResponsive").style.display = "none";
+            document.getElementById("responsiveNAV").style.display = "block";
+        });
+    });
 });

@@ -14,6 +14,19 @@ header {
     right: 0;
 }
 
+.responsivenavbar {
+    display: flex !important;
+    flex-direction: column;
+    background: var(--papierFonce);
+    top: 90px;
+    width: 100%;
+    z-index: 999 !important;
+} .responsivenavbar button {
+    padding: 20px;
+}
+
+#onlyCloseResponsive { display: none; }
+
 nav img {
     height: auto; width: 40px;
     border-radius: 50%;
@@ -52,3 +65,9 @@ nav button:hover {
     background: var(--blue);
     color: #fff;
 }
+
+.ResponsiveNabarBTN {
+    display: none;
+    position: absolute;
+    right: 0;
+} .ResponsiveNabarBTN i { font-size: 27px; }

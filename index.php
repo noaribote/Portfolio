@@ -28,17 +28,21 @@
         <nav class="limited FlexCenter2" style="position: relative">
             <div class="position-left FlexCenter2">
                 <img src="assets/images/logo.png" alt="logo">
-                <div>
+                <div class="responsiveQuotes">
                     <h4>Noa RIBOTE</h4>
                     <p><i class="fa-regular fa-circle-dot"></i>&nbsp;Lead Developer Full-Stack & DevOps</p>
                 </div>
             </div>
-            <div class="position-right">
-                <button id="nav-about">À propos</button>
-                <button class="nav-project">Projets</button>
-                <button id="nav-skills">Compétences</button>
-                <button id="nav-paths">Parcours</button>
-                <button id="nav-contact" class="speceBTN">Me contacter&nbsp;↗</button>
+            <div class="ResponsiveNabarBTN">
+                <button id="responsiveNAV"><i class="fa-solid fa-bars-staggered"></i></button>
+                <button class="responsiveOpac" id="onlyCloseResponsive"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="position-right" id="ResponsiveDisplays">
+                <button class="responsiveOpac" id="nav-about">À propos</button>
+                <button class="responsiveOpac nav-project">Projets</button>
+                <button class="responsiveOpac" id="nav-skills">Compétences</button>
+                <button class="responsiveOpac" id="nav-paths">Parcours</button>
+                <button class="responsiveOpac speceBTN" id="nav-contact">Me contacter&nbsp;↗</button>
             </div>
         </nav>
     </header>
@@ -293,7 +297,7 @@
     <footer class="FlexCenter">
         <section class="limited FlexCenter2" style="position: relative">
             <div id="footerLEFT">
-                <h1>Un projet en tête ?<br><em>Parlons-en.</em></h1>
+                <h1 id="setNewChartContent">Un&nbsp;projet&nbsp;en&nbsp;tête&nbsp;?<br><em>Parlons-en.</em></h1>
                 <p>Une idée à concrétiser, une équipe à rejoindre ou simplement l’envie d’échanger ? Écrivez-moi, je vous répondrai avec plaisir.</p>
                 <a href="mailto:noaribotemoral@gmail.com" target="_blank" class="footerButton">M'écrire&nbsp;↗</a>
             </div>
@@ -331,4 +335,5 @@
 </body>
 <script src="controller/main.js"></script>
 <script src="controller/nav.js"></script>
+<script src="controller/responsive.js" defer></script>
 </html>

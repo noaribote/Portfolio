@@ -1,13 +1,51 @@
+@media screen and (max-width: 1580px) {
+    .spotyContentRight .off { display: none; }
+    .spotyContent { width: 100% !important; }
+    .rightH2 { top: -2px !important; left: 0 !important; right: auto !important; }
+}
+
+@media screen and (max-width: 1435px) {
+    .position-right { display: none; }
+    .ResponsiveNabarBTN { display: block !important; }
+}
+
+@media screen and (max-width: 1395px) { #footerRIGHT { margin-top: 100px !important; } }
+
+@media screen and (max-width: 1215px) {
+    footer {  height: 700px !important; }
+    #footerRIGHT {
+        right: auto !important; left: 0;
+        max-width: 100% !important;
+        margin-top: 100px !important;
+        top: 350px !important;
+    }
+    #footerLEFT { max-width: 100% !important; margin-top: -200px !important; }
+}
+
+@media screen and (max-width: 1170px) {
+    .contentGrid {
+        grid-template-columns: repeat(1, 1fr) !important;
+        column-gap: auto !important;
+        row-gap: auto !important;
+    }
+    .project-offset, .project-offset-sm { margin-top: 10px !important; }
+}
+
+@media (max-width:1000px) {
+        footer section#end img, #sourceBTN, #toTOPButton-footer { display: none; }
+}
+
 @media (max-width: 900px) {
     .movie-carousel, .movie-pagination { width: 55%; }
     .movie-viewport { left: 36px; right: 36px; }
 }
 
 @media (max-width: 700px) {
+    .limited { width: 88% !important; }
+    h1 {font-size: clamp(42px, 10vw, 60px) !important;}
     #paths > .limited {
-        width: 88%;
         padding: 54px 0;
-    } #paths > .limited > h1 { font-size: clamp(42px, 10vw, 60px); }
+    }
 
     #paths > .limited > p {
         width: 100%;
@@ -45,4 +83,16 @@
         margin-left: 50px;
     }
     .paths-description, .paths-place { margin-left: 0; }
+}
+
+@media screen and (max-width: 440px) {
+    nav p { font-size: 9px !important; top: 5px; left: -25px; position: relative; }
+    nav p i { display: none !important; }
+    nav img { width: 20px !important; }
+    .responsiveQuotes { margin-top: 15px; }
+}
+
+@media screen and (max-width: 325px) {
+    .footerBAS { font-size: 9px !important; }
+    .style_buttons button { font: 9px var(--mono) !important; }
 }
