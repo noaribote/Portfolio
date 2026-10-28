@@ -1,10 +1,10 @@
-@media screen and (max-width: 1750px) {
+/* @media screen and (max-width: 1750px) {
     .responsiveMovies {
         height: 600px !important;
         display: flex !important;
         flex-direction: column !important;
     } .responsiveMovies div { right: auto !important; left: auto !important; }
-}
+} */
 
 @media screen and (max-width: 1635px) {
     .spoty .mention {
@@ -61,8 +61,51 @@
     .project-offset, .project-offset-sm { margin-top: 10px !important; }
 }
 
+@media screen and (max-width: 1100px) {
+    .spotyMusic > .limited {
+        grid-template-columns: minmax(0, 1fr) !important;
+        row-gap: 28px !important;
+    }
+
+    .spotyMusic .spotyContentRight {
+        width: 100% !important;
+        max-width: 400px !important;
+        height: 260px !important;
+        justify-self: start !important;
+    }
+
+    .spotyMovies > .responsiveMovies {
+        height: auto !important;
+        grid-template-columns: minmax(0, 1fr) !important;
+        grid-template-rows: auto minmax(320px, auto) auto !important;
+        row-gap: 24px !important;
+    }
+
+    .spotyMovies .spotyContent {
+        grid-column: 1 !important;
+        grid-row: 1 !important;
+    }
+
+    .spotyMovies .spotyContent h1 {
+        max-width: 17ch !important;
+        font-size: clamp(38px, 6vw, 54px) !important;
+    }
+
+    .spotyMovies .movie-carousel {
+        grid-column: 1 !important;
+        grid-row: 2 !important;
+    }
+
+    .spotyMovies .movie-pagination {
+        grid-column: 1 !important;
+        grid-row: 3 !important;
+        padding-top: 0 !important;
+    }
+
+}
+
 @media (max-width:1000px) {
-        footer section#end img, #sourceBTN, #toTOPButton-footer { display: none; }
+    footer section#end img, #sourceBTN, #toTOPButton-footer { display: none; }
 }
 
 @media screen and (max-width: 980px) { .grosseGui { transform: rotate(-20deg) !important; } }
@@ -100,6 +143,7 @@
 }
 
 @media (max-width: 700px) {
+    .spotyMusic > .limited { width: 88% !important; }
     .limited { width: 88% !important; }
     h1 {font-size: clamp(42px, 10vw, 60px) !important;}
     #paths > .limited {
@@ -142,8 +186,8 @@
         margin-left: 50px;
     }
     .paths-description, .paths-place { margin-left: 0; }
-
     .skillsContent h2 { font-size: 3vw !important; }
+    .spotyMovies > .responsiveMovies { width: 88% !important; }
 }
 
 @media screen and (max-width: 695px) {
@@ -157,6 +201,38 @@
         width: 220px !important;
         padding: 40px 10px !important;
     }
+}
+
+@media screen and (max-width: 600px) {
+    .spotyMovies { padding: 38px 0 !important; }
+
+    .spotyMovies > .responsiveMovies {
+        width: 88% !important;
+        grid-template-rows: auto minmax(320px, auto) auto !important;
+        row-gap: 20px !important;
+    }
+
+    .spotyMovies .spotyContent h1 {
+        font-size: clamp(34px, 9vw, 46px) !important;
+        letter-spacing: -1.2px;
+    }
+
+    .spotyMovies .spotyContent p {
+        font-size: 14px !important;
+        line-height: 1.7 !important;
+    }
+
+    .spotyMovies .spotyContent br { display: none !important; }
+
+    .spotyMovies .movie-viewport {
+        left: 40px !important;
+        right: 40px !important;
+    }
+
+    .spotyMovies .movie-nav { width: 34px !important; height: 34px !important; }
+
+    .spotyMovies .rightCenter { gap: 12px !important; }
+
 }
 
 @media screen and (max-width: 530px) {
@@ -174,6 +250,12 @@
     .langues { font-size: 9px !important; }
     .langues span { margin-right: 5px !important; }
 }
+
+@media screen and (max-width: 360px) {
+    .spotyMovies > .responsiveMovies { grid-template-rows: auto minmax(320px, auto) auto !important; }
+    .spotyMovies .movie-viewport { left: 36px !important; right: 36px !important; }
+}
+
 
 @media screen and (max-width: 325px) {
     .footerBAS { font-size: 9px !important; }

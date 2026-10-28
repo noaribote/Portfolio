@@ -68,10 +68,10 @@
                 <span class="off"><strong>RIBOTE--MORAL Noa</strong>&nbsp;·&nbsp;il / lui</span>
             </div>
         </section>
-        <div class="spoty FlexCenter">
+        <div class="spoty spotyMusic FlexCenter">
             <div class="limited" style="position: relative">
                 <div class="spotyContent">
-                    <h1>Ici, un avant-goût de mes <em>musiques favorites</em></h1>
+                    <h1>Avant-goût de mes <em>musiques favorites</em></h1>
                     <br><p>
                         J'écoute beaucoup de musique quand je fais usage de ma voiture, l'un de mes passe-temps favoris.
                     </p>
@@ -106,12 +106,12 @@
                 </div>
             </div>
         </div>
-        <div class="spoty FlexCenter">
+        <div class="spoty spotyMovies FlexCenter">
             <div class="limited responsiveMovies" style="position: relative">
                 <div class="spotyContent">
-                    <h1>Mes chefs-d'œuvre <em>cinématographique</em></h1>
+                    <h1>Coups de <em>cœur</em></h1>
                     <br><p>
-                        Vrai cinéphile amateur depuis tout jeune. Tant que je n'aurai pas de sensations devant l'œuvre, je n'accrocherai pas.
+                        Vrai cinéphile amateur depuis tout jeune.
                     </p>
                 </div>
                 <div class="movie-carousel" aria-label="Classement des films">
