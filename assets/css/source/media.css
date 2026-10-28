@@ -35,6 +35,16 @@
         footer section#end img, #sourceBTN, #toTOPButton-footer { display: none; }
 }
 
+@media screen and (max-width: 930px) {
+    .mentions button {
+        top: 10px !important; right: 10px !important;
+    }
+
+    .mentions h1 {
+        margin-top: 20px;
+    }
+}
+
 @media (max-width: 900px) {
     .movie-carousel, .movie-pagination { width: 55%; }
     .movie-viewport { left: 36px; right: 36px; }
@@ -83,6 +93,19 @@
         margin-left: 50px;
     }
     .paths-description, .paths-place { margin-left: 0; }
+}
+
+@media screen and (max-width: 695px) {
+    .mentions {
+        width: calc(100% - 80px) !important; height: calc(100% - 80px) !important;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .mentions img {
+        width: 220px !important;
+        padding: 40px 10px !important;
+    }
 }
 
 @media screen and (max-width: 440px) {

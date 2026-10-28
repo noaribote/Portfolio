@@ -4,6 +4,7 @@ header {
     width: 100%; height: 90px;
     border-bottom: 1px solid var(--line);
     opacity: 0; transform: translateY(20px); animation: appear-up .65s forwards;
+    z-index: 999 !important;
 }
 
 .position-left {
@@ -21,7 +22,6 @@ header {
     background: var(--papierFonce);
     top: 90px;
     width: 100%;
-    z-index: 999 !important;
 } .responsivenavbar button {
     padding: 20px;
 }
