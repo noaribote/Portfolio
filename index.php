@@ -107,7 +107,7 @@
             </div>
         </div>
         <div class="spoty FlexCenter">
-            <div class="limited" style="position: relative">
+            <div class="limited responsiveMovies" style="position: relative">
                 <div class="spotyContent">
                     <h1>Mes chefs-d'œuvre <em>cinématographique</em></h1>
                     <br><p>
@@ -185,14 +185,14 @@
             </div>
             <a id="GoToGit" class="toGithub is-hidden-project" href="https://github.com/noaribote" target="_blank">Voir tous mes projets sur GitHub&nbsp;↗</a>
         </div>
-        <div class="spoty FlexCenter">
+        <div class="spoty spotyResponsive FlexCenter">
             <div class="limited FlexCenter" style="position: relative">
                 <h1 style="text-align: center; font-size: 45px">
                     <span class="grosseGui">“</span>
                     L'Intelligence Artificielle agit,
                     <br><em>l'Homme réfléchit</em>
                     <span class="mention">
-                        <em>« Parce que seul l'Humain pourra contredire une IA sûre d'elle. »</em>
+                        <em>«&nbsp;Parce que seul l'Humain pourra contredire une IA sûre d'elle.&nbsp;»</em>
                         <br><br>—&nbsp;Noa
                     </span>
                 </h1>
@@ -235,7 +235,7 @@
                 </div>
             </div>
         </div>
-        <div class="spoty FlexCenter">
+        <div class="spoty spotyResponsive FlexCenter">
             <div class="limited FlexCenter" style="position: relative">
                 <h1 style="text-align: center; font-size: 45px">
                     <span class="grosseGui">“</span>
@@ -312,7 +312,7 @@
                     <span>↗</span>
                 </a>
                 <hr>
-                <a href="tel:+336 11 27 02 26" target="_blank" class="displays notd">
+                <a href="tel:+33611270226" target="_blank" class="displays notd">
                     <address>06 11 27 02 26</address>
                     <span>↗</span>
                 </a>

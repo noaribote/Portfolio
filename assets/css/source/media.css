@@ -1,3 +1,18 @@
+@media screen and (max-width: 1750px) {
+    .responsiveMovies {
+        height: 600px !important;
+        display: flex !important;
+        flex-direction: column !important;
+    } .responsiveMovies div { right: auto !important; left: auto !important; }
+}
+
+@media screen and (max-width: 1635px) {
+    .spoty .mention {
+        margin-bottom: 40px !important;
+        margin-right: auto !important;
+    }
+}
+
 @media screen and (max-width: 1580px) {
     .spotyContentRight .off { display: none; }
     .spotyContent { width: 100% !important; }
@@ -7,6 +22,14 @@
 @media screen and (max-width: 1435px) {
     .position-right { display: none; }
     .ResponsiveNabarBTN { display: block !important; }
+}
+
+@media screen and (max-width: 1400px) {
+    .grosseGui {
+        font-size: 120px !important;
+        top: 100px !important;
+        left: 0 !important;
+    }
 }
 
 @media screen and (max-width: 1395px) { #footerRIGHT { margin-top: 100px !important; } }
@@ -42,6 +65,8 @@
         footer section#end img, #sourceBTN, #toTOPButton-footer { display: none; }
 }
 
+@media screen and (max-width: 980px) { .grosseGui { transform: rotate(-20deg) !important; } }
+
 @media screen and (max-width: 930px) {
     .mentions button {
         top: 10px !important; right: 10px !important;
@@ -60,6 +85,18 @@
 @media screen and (max-width: 850px) {
     .skillsContent h2 { font-size: 2.1vw !important; }
     .skillsContent { grid-template-columns: repeat(1, 1fr) !important; }
+}
+
+@media screen and (max-width: 845px) {
+    .mention {
+        margin: 70px 0 !important;
+        max-width: 100% !important;
+        right: auto !important;
+        left: 0 !important;
+    }
+    .grosseGui {
+        top: 70px !important;
+    }
 }
 
 @media (max-width: 700px) {
