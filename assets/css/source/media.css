@@ -11,6 +11,13 @@
 
 @media screen and (max-width: 1395px) { #footerRIGHT { margin-top: 100px !important; } }
 
+@media screen and (max-width: 1325px) {
+    .skillsContent div { min-height: auto !important; }
+    .skillsContent h2 { font-size: 1.7vw !important; }
+    .skillsContent { grid-template-columns: repeat(2, 1fr) !important; }
+    .speciSkillsContent { grid-template-columns: repeat(1, 1fr) !important; }
+}
+
 @media screen and (max-width: 1215px) {
     footer {  height: 700px !important; }
     #footerRIGHT {
@@ -48,6 +55,11 @@
 @media (max-width: 900px) {
     .movie-carousel, .movie-pagination { width: 55%; }
     .movie-viewport { left: 36px; right: 36px; }
+}
+
+@media screen and (max-width: 850px) {
+    .skillsContent h2 { font-size: 2.1vw !important; }
+    .skillsContent { grid-template-columns: repeat(1, 1fr) !important; }
 }
 
 @media (max-width: 700px) {
@@ -93,6 +105,8 @@
         margin-left: 50px;
     }
     .paths-description, .paths-place { margin-left: 0; }
+
+    .skillsContent h2 { font-size: 3vw !important; }
 }
 
 @media screen and (max-width: 695px) {
@@ -108,11 +122,20 @@
     }
 }
 
+@media screen and (max-width: 530px) {
+    .skillsContent h2 { font-size: 5vw !important; }
+}
+
 @media screen and (max-width: 440px) {
     nav p { font-size: 9px !important; top: 5px; left: -25px; position: relative; }
     nav p i { display: none !important; }
     nav img { width: 20px !important; }
     .responsiveQuotes { margin-top: 15px; }
+}
+
+@media screen and (max-width: 390px) {
+    .langues { font-size: 9px !important; }
+    .langues span { margin-right: 5px !important; }
 }
 
 @media screen and (max-width: 325px) {
