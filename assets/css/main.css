@@ -134,6 +134,7 @@ main {
 
 .contre-photo ul { margin: 50px }
 .contre-photo ul li { margin: 10px; font-style: italic; }
+.contre-photo ul li::marker { content: "↗ "; color: var(--bordeaux); }
 
 .contre-photo .fa-images {
     color: var(--line);

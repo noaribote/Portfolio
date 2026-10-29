@@ -80,14 +80,7 @@
         width: 60% !important;
     }
 
-    .contentRIGHT .sideText {
-        position: fixed !important;
-        right: 7px !important;
-        top: 100px !important;
-        bottom: auto !important; left: auto !important;
-        writing-mode: vertical-rl !important;
-        animation: appear-right-responsiveVertical .65s forwards !important;
-    }
+    .contentRIGHT .sideText { display: none; }
     
     .contentRIGHT span { display: none; }
     .modalView { width: 100% !important; height: 100% !important; }
@@ -111,6 +104,38 @@
         row-gap: auto !important;
     }
     .project-offset, .project-offset-sm { margin-top: 10px !important; }
+}
+
+@media screen and (max-width: 1275px) {
+    .spoty > .limited:has(.photo1) {
+        width: 78% !important;
+        min-height: 480px;
+        gap: clamp(28px, 5vw, 64px);
+    }
+
+    .spoty .photo1 {
+        flex: 0 1 40%;
+        width: 40% !important;
+        max-width: 390px;
+        max-height: 420px;
+        object-fit: cover;
+        border-width: 4px;
+    }
+
+    .spoty .contre-photo {
+        flex: 1 1 0;
+        width: auto;
+        min-width: 0;
+        margin-left: 0;
+    }
+
+    .spoty .contre-photo h1 {
+        font-size: clamp(42px, 5vw, 64px);
+        line-height: 1.02;
+    }
+
+    .spoty .contre-photo ul { margin: 30px 0 0; }
+    .spoty .contre-photo ul li { margin: 14px 0; }
 }
 
 @media screen and (max-width: 1100px) {
@@ -157,7 +182,54 @@
 }
 
 @media (max-width: 1000px) { footer section#end img, #sourceBTN, #toTOPButton-footer { display: none; } }
-@media screen and (max-width: 980px) { .grosseGui { transform: rotate(-20deg) !important; } }
+@media screen and (max-width: 980px) {
+    .grosseGui { transform: rotate(-20deg) !important; }
+
+    .spoty > .limited:has(.photo1) {
+        width: 84% !important;
+        min-height: 420px !important;
+        padding: 30px 0 !important;
+        box-sizing: border-box !important;
+        align-items: center !important;
+        justify-content: space-between !important;
+        gap: clamp(24px, 4vw, 42px) !important;
+    }
+
+    .spoty .photo1 {
+        position: relative !important;
+        inset: auto !important;
+        flex: 0 1 36% !important;
+        width: 36% !important;
+        max-width: 300px !important;
+        height: clamp(300px, 38vw, 370px) !important;
+        max-height: none !important;
+        object-fit: cover !important;
+        object-position: 54% 62% !important;
+        border: 4px solid transparent !important;
+        box-shadow: 0 0 10px #80394a3d !important;
+        opacity: 1 !important;
+        filter: saturate(.72) sepia(.08) !important;
+        mask-image: none !important;
+    }
+
+    .spoty .contre-photo {
+        position: relative !important;
+        flex: 1 1 0 !important;
+        width: auto !important;
+        max-width: none !important;
+        padding: 24px 0 !important;
+        box-sizing: border-box !important;
+        isolation: auto !important;
+    }
+
+    .spoty .contre-photo h1 {
+        max-width: 12ch !important;
+        font-size: clamp(38px, 5vw, 50px) !important;
+    }
+
+    .spoty .contre-photo ul { margin: 24px 0 0 !important; }
+    .spoty .contre-photo ul li { line-height: 1.5 !important; }
+}
 
 @media screen and (max-width: 940px) {
     .contentLEFT, .contentRIGHT { --distance: 250px; border-bottom: none !important; }
@@ -290,6 +362,82 @@
 }
 
 @media screen and (max-width: 600px) {
+        .spoty {
+        margin: 24px 0 !important;
+        padding: 24px 0 !important;
+        overflow-x: clip !important;
+    }
+
+    .spoty > .limited:has(.photo1) {
+        width: 88% !important;
+        min-height: 0 !important;
+        padding: 0 !important;
+        align-items: stretch !important;
+    }
+
+    .spoty .photo1 {
+        position: absolute !important;
+        z-index: 0 !important;
+        inset: 0 -7% 0 auto !important;
+        flex: none !important;
+        width: 80% !important;
+        max-width: none !important;
+        height: 100% !important;
+        max-height: none !important;
+        border: 0 !important;
+        box-shadow: none !important;
+        opacity: .68 !important;
+        filter: saturate(.76) sepia(.06) !important;
+        object-fit: cover !important;
+        object-position: 54% 58% !important;
+        mask-image: linear-gradient(to right, transparent 0%, #000 42%) !important;
+    }
+
+    .spoty .contre-photo {
+        position: relative !important;
+        z-index: 1 !important;
+        flex: 1 1 auto !important;
+        width: 100% !important;
+        max-width: none !important;
+        padding: 38px 0 34px !important;
+        box-sizing: border-box !important;
+        isolation: auto !important;
+    }
+
+    .spoty .contre-photo h1 {
+        max-width: 12ch !important;
+        font-size: clamp(42px, 9vw, 60px) !important;
+        line-height: 1.02 !important;
+    }
+
+    .spoty .contre-photo ul {
+        margin: 30px 0 0 !important;
+        padding: 18px 18px 18px 22px !important;
+        width: min(100%, 440px) !important;
+        box-sizing: border-box !important;
+        list-style: none !important;
+        border-left: 1px solid var(--bordeaux) !important;
+    }
+
+    .spoty .contre-photo ul li {
+        position: relative;
+        margin: 12px 0;
+        padding-left: 18px;
+        font-size: 14px;
+    }
+
+    .spoty .contre-photo ul li::before {
+        content: "↗";
+        position: absolute;
+        left: 0;
+        color: var(--bordeaux);
+        font: 12px var(--mono);
+    }
+
+    .spoty .contre-photo .fa-images {
+        display: none;
+    }
+
     .spotyMovies { padding: 38px 0 !important; }
 
     .spotyMovies > .responsiveMovies {
@@ -325,6 +473,36 @@
     .skillsContent h2 { font-size: 5vw !important; }
 }
 
+@media screen and (max-width: 480px) {
+    .spoty > .limited:has(.photo1) { width: 90% !important; }
+
+    .spoty .photo1 {
+        inset: 20px -9% 20px auto !important;
+        width: 88% !important;
+        opacity: .56 !important;
+        object-position: 54% 58% !important;
+        mask-image: linear-gradient(to right, transparent 0%, #000 40%) !important;
+    }
+
+    .spoty .contre-photo { padding: 30px 0 !important; }
+    .spoty .contre-photo h1 {
+        max-width: 11ch !important;
+        font-size: clamp(38px, 10vw, 48px) !important;
+        letter-spacing: -1.5px !important;
+    }
+
+    .spoty .contre-photo ul {
+        margin-top: 24px !important;
+        padding: 12px 12px 12px 16px !important;
+    }
+
+    .spoty .contre-photo ul li {
+        margin: 10px 0;
+        padding-left: 16px;
+        font-size: 13px;
+    }
+}
+
 @media screen and (max-width: 440px) {
     nav p { font-size: 9px !important; top: 5px; left: -25px; position: relative; }
     nav p i { display: none !important; }
@@ -340,10 +518,33 @@
 @media screen and (max-width: 360px) {
     .spotyMovies > .responsiveMovies { grid-template-rows: auto minmax(320px, auto) auto !important; }
     .spotyMovies .movie-viewport { left: 36px !important; right: 36px !important; }
+
+    .spoty > .limited:has(.photo1) { width: 92% !important; }
+
+    .spoty .contre-photo h1 {
+        max-width: 10ch !important;
+        font-size: 37px !important;
+    }
+
+    .spoty .contre-photo ul { padding: 10px 8px 10px 12px !important; }
+    .spoty .contre-photo ul li { font-size: 12px; }
+    .spoty .photo1 { width: 96% !important; opacity: .48 !important; }
 }
 
 
 @media screen and (max-width: 325px) {
     .footerBAS { font-size: 9px !important; }
     .style_buttons button { font: 9px var(--mono) !important; }
+}
+
+@media screen and (max-width: 280px) {
+    .spoty .contre-photo h1 {
+        max-width: 9ch !important;
+        font-size: 33px !important;
+        letter-spacing: -1.2px !important;
+    }
+
+    .spoty .contre-photo ul { margin-top: 20px !important; }
+    .spoty .contre-photo ul li { font-size: 11px; }
+    .spoty .photo1 { opacity: .4 !important; }
 }
