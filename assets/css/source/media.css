@@ -463,9 +463,10 @@
     .spotyMovies .movie-viewport {
         left: 40px !important;
         right: 40px !important;
+        touch-action: pan-y;
     }
 
-    .spotyMovies .movie-nav { width: 34px !important; height: 34px !important; }
+    .spotyMovies .movie-pagination { display: flex !important; }
 
     .spotyMovies .rightCenter { gap: 12px !important; }
 

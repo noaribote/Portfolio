@@ -87,6 +87,30 @@ document.addEventListener('DOMContentLoaded', () => {
     previous.addEventListener('click', () => showMovie(current - 1));
     next.addEventListener('click', () => showMovie(current + 1));
     dots.forEach((dot, index) => dot.addEventListener('click', () => showMovie(index)));
+
+    let touchStartX = null;
+    let touchStartY = null;
+    viewport.addEventListener('touchstart', (event) => {
+        if (window.matchMedia('(max-width: 600px)').matches && event.touches.length === 1) {
+            touchStartX = event.touches[0].clientX;
+            touchStartY = event.touches[0].clientY;
+        }
+    }, { passive: true });
+    viewport.addEventListener('touchend', (event) => {
+        if (touchStartX === null || !window.matchMedia('(max-width: 600px)').matches) return;
+        const deltaX = event.changedTouches[0].clientX - touchStartX;
+        const deltaY = event.changedTouches[0].clientY - touchStartY;
+        if (Math.abs(deltaX) > 40 && Math.abs(deltaX) > Math.abs(deltaY)) {
+            showMovie(current + (deltaX < 0 ? 1 : -1));
+        }
+        touchStartX = null;
+        touchStartY = null;
+    }, { passive: true });
+    viewport.addEventListener('touchcancel', () => {
+        touchStartX = null;
+        touchStartY = null;
+    }, { passive: true });
+
     window.addEventListener('resize', () => requestAnimationFrame(update));
     update();
 
