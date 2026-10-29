@@ -47,8 +47,8 @@
         </nav>
     </header>
     <main class="FlexCenter">
-        <section class="contentLimited FlexCenter2">
-            <div class="contentLEFT FlexCenter">
+        <section class="contentLimited ResponsiveLimitedMainSection FlexCenter2">
+            <div class="contentLEFT">
                 <h1>Maître de <em>l'information</em> numérique</h1>
                 <p><?php require 'views/description.html' ?></p>
                 <div class="position-div">
@@ -61,10 +61,10 @@
                 </div>
             </div>
             <div class="contentRIGHT FlexCenter">
-                <p class="sideText">Développeur web et chef de projet</p>
                 <div class="modalView">
                     <img src="assets/images/noa/noaribote.webp" alt="RIBOTE--MORAL Noa">
                 </div>
+                <p class="sideText">Développeur web et chef de projet</p>
                 <span class="off"><strong>RIBOTE--MORAL Noa</strong>&nbsp;·&nbsp;il / lui</span>
             </div>
         </section>
@@ -95,7 +95,7 @@
             <div class="limited FlexCenter2" style="position: relative">
                 <img class="photo1" src="assets/images/noa/noaribote_side.webp" alt="noa ribote moral side">
                 <div class="contre-photo">
-                    <h1>Mes <em>week-ends</em> se résument souvent à...</h1>
+                    <h1>Mes <em>week-ends</em> se résument <mark id="monoM">souvent</mark>&nbsp;à...</h1>
                     <ul>
                         <li>Travailler sur moi-même</li>
                         <li>Travailler sur mes projets</li>

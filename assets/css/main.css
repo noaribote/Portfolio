@@ -16,17 +16,23 @@ main {
     height: 550px;
 }
 
+.contentRIGHT {
+    width: 40%;
+    margin-left: 10%;
+    right: 0;
+}
+
 .contentLEFT {
     width: 50%;
     left: 0;
 } .contentLEFT h1 {
     font-size: 100px;
     font-weight: 500;
+    margin-top: 70px;
     margin-bottom: 20px;
     opacity: 0; transform: translateX(-20px); animation: appear-left .65s forwards;
 } .contentLEFT p {
     line-height: 1.45;
-    /* line-height: 1.85; */
     opacity: 0; transform: translateX(-20px); animation: appear-left .65s forwards;
 }
 
@@ -59,12 +65,6 @@ main {
     cursor: pointer;
     color: var(--bordeaux);
     border-color: var(--bordeaux);
-}
-
-.contentRIGHT {
-    width: 40%;
-    margin-left: 10%;
-    right: 0;
 }
 
 .contentRIGHT .sideText {
