@@ -55,11 +55,16 @@
     cursor: pointer;
 }
 
+.contentSignature {
+    position: relative;
+    height: 140px; width: 100%;
+}
+
 .mentions img {
     pointer-events: none;
     user-select: none;
     height: auto; width: 280px;
     padding: 40px;
     position: absolute;
-    right: 0;
+    right: 0; bottom: 0;
 }
