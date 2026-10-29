@@ -1,5 +1,5 @@
 <?php
-    $pdfCV = '03-10-26';
+    $pdfCV = '29-10-26';
 
     $SpotifyHeight = 120; $SpotifyWidth = 300;
     $SpotifyMusics = [
@@ -60,3 +60,4 @@
         ["DNB", "JM", "Collège Jean Macé", "", "sept. 2019 - juin 2023", "Portes-lès-Valence (26800)"]
     ]
 ?>
+<!DOCTYPE html><html lang="fr-FR"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Erreur 403</title><style> body {overflow: hidden; font-family: "Playfair Display", Georgia,serif; padding: 0 40px; background: #f5f4f0; height: 100vh; color: #202d43;} h1 { font-size: 30px; } em {color: #80394a;} a {text-decoration: underline; color: #737c83;} a:hover {cursor: pointer;color:#80394a;text-decoration: none;}</style><meta name="color-scheme" content="light"></head><body><h1>Erreur <em>403</em></h1><p>Vous n'avez pas la permission d'accéder à cette page.</p><a href="https://www.noaribote.fr/">Retourner sur le site</a></body></html>
