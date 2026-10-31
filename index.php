@@ -17,6 +17,10 @@
             body { overflow: hidden !important; }
         </style>
     <?php endif; ?>
+    <?php if (date('d') === '31' && date('m') === '10'): ?>
+        <link rel="stylesheet" href="assets/css/events/styles.css">
+        <script type="importmap">{"imports": {"three": "https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js","three/addons/": "https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/"}}</script>
+    <?php endif; ?>
 </head>
 <body>
     <?php if (isset($_GET['display']) && $_GET['display'] === 'mentions'): ?>
@@ -24,6 +28,11 @@
             <?php require_once 'views/mentions.html'; ?>
         </div>
     <?php else: ?>
+    <?php
+        if (date('d') === '31' && date('m') === '10') {
+            require_once 'views/events/halloween3DViewer.html';
+        }
+    ?>
     <header class="FlexCenter">
         <nav class="limited FlexCenter2" style="position: relative">
             <div class="position-left FlexCenter2">
