@@ -21,7 +21,7 @@
         "MW4 Concept" => ["Concept d’interface pour le menu du jeu Call of Duty MODERN WARFARE 4.", "Application", 2026, "mw4", "https://github.com/noaribote/mw4-menu"],
         // "Mobile Directory" => ["Reproduction d'un annuaire de contacts sécurisé en liant PHP, SQL et JS.", "Site Web", 2026, "annmob", "https://github.com/noaribote/Mobile-Directory"],
         "NCV1 ModLoader" => ["Le NCV1 ModLoader est un outil de modification pour GTA ONLINE sur PS3, permettant de personnaliser l’expérience de jeu grâce à différentes fonctionnalités et modifications intégrées.", "Modding", 2025, "ncv1", "https://github.com/noaribote/NCV1-ModLoader"],
-        "The Walking Dead Univers" => ["Projet communautaire autour de l’univers de The Walking Dead.", "Site Web", 2024, "twdu", "https://www.alous.fr/TheWalkingDeadUnivers"],
+        "The Walking Dead Universe" => ["Site one-page factice présentant les différentes séries de l'univers de The Walking Dead et expérimentant le 'touch' et l'optimisation. Inlcus un outil de compression webm spécifique.", "Site Web", 2024, "twdu", "https://github.com/noaribote/TheWalkingDead-Universe"],
         "Noa_chid's XMB" => ["Noa_chid's XMB est le meilleur site de recherche et de téléchargement de mods.", "Site Web", 2023, "ncxmb", "https://www.noachidxmb.xyz/"]
     ];
     $Skills = ["Autonome", "Responsable", "À l'écoute", "Attentif", "Soigneux", "Assidu"];
@@ -29,7 +29,7 @@
         "Web" => ["PHP", "HTML", "CSS", "APACHE"],
         "JavaScript" => ["JavaScript", "Electron.js", "Node.js", "NPM", "JSON", "jQuery"],
         "Python & Données" => ["Python", "Flask", "phpMyAdmin", "SQL", "SQLiteStudio", "MySQL", "CSV"],
-        "Développement de Jeux" => ["C++", "Moddeur PlayStation"],
+        "Développement de Jeux" => ["C++", "Moddeur PlayStation", "Filmbox (FBX)"],
         "Outils & Environnements" => ["Trello", "Git", "Github", "GitLab", "OVHcloud", "Netlify", "Vercel", "Postman", "cdnjs", "Cloudflare", "Unity", "WSL", "PowerShell", "FileZilla", "LibreOffice", "Microsoft 365", "Oracle VirtualBox", "Visual Studio", "Visual Studio Code"],
         "Systèmes d'exploitation" => ["Windows 10, 11", "Linux", "LTSP", "Ubuntu", "Debian", "Android"],
         "Design" => ["Canva", "Figma", "GIMP", "Picsart", "Font Awesome", "CoreUI", "Google Fonts", "SVG"],
