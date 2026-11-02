@@ -14,6 +14,7 @@
     $Movies = ["oppenheimer", "rogueone", "odyssee", "andor", "transformers3", "breakingbad", "starwars7", "thewalkingdead", "bettercallsaul", "interstellar"];
     $Projects = [
         "ALOUS FRANCE" => ["Site sécurisé de mon entreprise de Développement WEB.", "Application Web", 2026, "alous", "https://www.alous.fr/"],
+        "Instagram Data Viewer" => ["Visualisateur, interpréteur et comparateur de données Meta (Instagram) sécurisé.", "Application", 2026, "idv", "https://github.com/noaribote/Instagram-Data-Viewer"],
         "tPlan" => ["Application de gestion de tâches sécurisée.", "Application", 2026, "tplan", "https://github.com/noaribote/tPlan"],
         "ASF" => ["Application de suivi des finances sécurisée.", "Application", 2026, "asf", "https://github.com/noaribote/ASF"],
         "AscensionZ Launcher" => ["Launcher Minecraft moddé indépendant et sécurisé, inspiré de HunterZ : Survie réaliste post-apocalypse zombie.", "Application", 2026, "azlauncher", "https://github.com/noaribote/AscensionZ-Launcher"],
