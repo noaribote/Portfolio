@@ -24,11 +24,11 @@
         "The Walking Dead Universe" => ["Site one-page factice présentant les différentes séries de l'univers de The Walking Dead et expérimentant le 'touch' et l'optimisation. Inlcus un outil de compression webm spécifique.", "Site Web", 2024, "twdu", "https://github.com/noaribote/TheWalkingDead-Universe"],
         "Noa_chid's XMB" => ["Noa_chid's XMB est le meilleur site de recherche et de téléchargement de mods.", "Site Web", 2023, "ncxmb", "https://www.noachidxmb.xyz/"]
     ];
-    $Skills = ["Autonome", "Responsable", "À l'écoute", "Attentif", "Soigneux", "Assidu"];
+    $Skills = ["Autonome", "Responsable", "À l'écoute", "Attentif", "Soigneux", "Assidu", "Souriant", "Passioné", "Curieux"];
     $SkillsDomainesTechniques = [
         "Web" => ["PHP", "HTML", "CSS", "APACHE"],
-        "JavaScript" => ["JavaScript", "Electron.js", "Node.js", "NPM", "JSON", "jQuery"],
-        "Python & Données" => ["Python", "Flask", "phpMyAdmin", "SQL", "SQLiteStudio", "MySQL", "CSV"],
+        "JavaScript" => ["JavaScript", "TypeScript", "Electron.js", "Node.js", "NPM", "jQuery"],
+        "Python & Données" => ["Python", "Flask", "phpMyAdmin", "SQL", "SQLiteStudio", "MySQL", "CSV", "JSON"],
         "Développement de Jeux" => ["C++", "Moddeur PlayStation", "Filmbox (FBX)"],
         "Outils & Environnements" => ["Trello", "Git", "Github", "GitLab", "OVHcloud", "Netlify", "Vercel", "Postman", "cdnjs", "Cloudflare", "Unity", "WSL", "PowerShell", "FileZilla", "LibreOffice", "Microsoft 365", "Oracle VirtualBox", "Visual Studio", "Visual Studio Code"],
         "Systèmes d'exploitation" => ["Windows 10, 11", "Linux", "LTSP", "Ubuntu", "Debian", "Android"],
