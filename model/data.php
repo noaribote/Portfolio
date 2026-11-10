@@ -26,16 +26,16 @@
     ];
     $Skills = ["Autonome", "Responsable", "À l'écoute", "Attentif", "Soigneux", "Assidu", "Souriant", "Passioné", "Curieux"];
     $SkillsDomainesTechniques = [
-        "Web" => ["PHP", "HTML", "CSS", "APACHE"],
+        "Web & Référencements" => ["PHP", "HTML", "CSS", "APACHE", "SEO", "SMA/SMO", "SEA", "GEO/SGEO"],
         "JavaScript" => ["JavaScript", "TypeScript", "Electron.js", "Node.js", "NPM", "jQuery"],
         "Python & Données" => ["Python", "Flask", "phpMyAdmin", "SQL", "SQLiteStudio", "MySQL", "CSV", "JSON"],
         "Développement de Jeux" => ["C++", "Moddeur PlayStation", "Filmbox (FBX)"],
         "Outils & Environnements" => ["Trello", "Git", "Github", "GitLab", "OVHcloud", "Netlify", "Vercel", "Postman", "cdnjs", "Cloudflare", "Unity", "WSL", "PowerShell", "FileZilla", "LibreOffice", "Microsoft 365", "Oracle VirtualBox", "Visual Studio", "Visual Studio Code"],
         "Systèmes d'exploitation" => ["Windows 10, 11", "Linux", "LTSP", "Ubuntu", "Debian", "Android"],
         "Design" => ["Canva", "Figma", "GIMP", "Picsart", "Font Awesome", "CoreUI", "Google Fonts", "SVG"],
-        "Intelligences artificielles" => ["ChatGPT", "Codex", "Claude", "Gemini", "Mistral AI"],
+        "Intelligences artificielles" => ["CLIs", "LLMs", "ChatGPT", "Codex", "Claude", "Claude Code", "Grok", "Gemini", "Mistral AI"],
         "Communication" => ["YouTube", "TikTok", "Instagram", "Facebook", "Twitter", "LinkedIn", "Pinterest", "Discord", "Kick", "Twitch"],
-        "Autre" => ["Markdown", "Architecture MVC", "VBScript", "Script Batch", "Google Ads", "SEO", "SMO"]
+        "Autre" => ["Markdown", "Architecture MVC", "VBScript", "Script Batch", "Google Adsense"]
     ];
     $jobs = [
         // ["nom du poste", "nom de l'image .webp", "nom de l'entreprise", "type de poste", "description", "date", "lieu"],
