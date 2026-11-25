@@ -6,7 +6,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Noa Ribote | Lead Developer Full-Stack & DevOps</title>
+    <title>Noa Ribote | Développeur Full-Stack & Etudiant</title>
     <meta name="description" content="<?php require 'views/description.html' ?>">
     <meta name="author" content="RIBOTE--MORAL Noa">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
@@ -40,7 +40,7 @@
                 <img src="assets/images/logo.png" alt="logo">
                 <div class="responsiveQuotes">
                     <h4>Noa RIBOTE</h4>
-                    <p><i class="fa-regular fa-circle-dot"></i>&nbsp;Lead Developer Full-Stack & DevOps</p>
+                    <p><i class="fa-regular fa-circle-dot"></i>&nbsp;Développeur Full-Stack & Etudiant</p>
                 </div>
             </div>
             <div class="ResponsiveNabarBTN">
