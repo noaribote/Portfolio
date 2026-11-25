@@ -1,5 +1,5 @@
 <?php
-    $pdfCV = '29-10-26';
+    $pdfCV = '25-11-26';
 
     $SpotifyHeight = 120; $SpotifyWidth = 300;
     $SpotifyMusics = [
