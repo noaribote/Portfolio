@@ -1,6 +1,12 @@
-<?php
+﻿<?php
     $pdfCV = '25-11-26';
 
+    $levelsSKILLS = [
+        '<i class="fa-solid fa-award level-base level-blue"></i>',
+        '<i class="fa-solid fa-medal level-base level-gold"></i>',
+        '<i class="fa-solid fa-medal level-base level-silver"></i>',
+        '<i class="fa-solid fa-medal level-base level-bronze"></i>'
+    ];
     $SpotifyHeight = 120; $SpotifyWidth = 300;
     $SpotifyMusics = [
         "track/7ySUcLPVX7KudhnmNcgY2D?utm_source=generator&si=a9e5e61514124840",
@@ -26,18 +32,18 @@
         "NCV1 ModLoader" => ["Le NCV1 ModLoader est un outil de modification pour GTA ONLINE sur PS3, permettant de personnaliser l’expérience de jeu grâce à différentes fonctionnalités et modifications intégrées.", "Modding", 2025, "ncv1", "https://github.com/noaribote/NCV1-ModLoader"],
         "The Walking Dead Universe" => ["Site one-page factice présentant les différentes séries de l'univers de The Walking Dead et expérimentant le 'touch' et l'optimisation. Inlcus un outil de compression webm spécifique.", "Site Web", 2024, "twdu", "https://github.com/noaribote/TheWalkingDead-Universe"]
     ];
-    $Skills = ["Autonome", "Responsable", "À l'écoute", "Attentif", "Soigneux", "Assidu", "Souriant", "Passioné", "Curieux"];
+    $Skills = ["Autonome", "Responsable", "À l'écoute", "Attentif", "Soigneux", "Assidu", "Souriant", "Passioné", "Curieux"];    
     $SkillsDomainesTechniques = [
-        "Web & Référencements" => ["PHP", "HTML", "CSS", "APACHE", "SEO", "SMA/SMO", "SEA", "GEO/SGEO"],
-        "JavaScript" => ["JavaScript", "TypeScript", "Electron.js", "Node.js", "NPM", "jQuery"],
-        "Python & Données" => ["Python", "Flask", "phpMyAdmin", "SQL", "SQLiteStudio", "MySQL", "CSV", "JSON"],
-        "Développement de Jeux" => ["C++", "Moddeur PlayStation", "Filmbox (FBX)"],
-        "Outils & Environnements" => ["Trello", "Git", "Github", "GitLab", "OVHcloud", "Netlify", "Vercel", "Postman", "cdnjs", "Cloudflare", "Unity", "WSL", "PowerShell", "FileZilla", "LibreOffice", "Microsoft 365", "Oracle VirtualBox", "Visual Studio", "Visual Studio Code"],
-        "Systèmes d'exploitation" => ["Windows 10, 11", "Linux", "LTSP", "Ubuntu", "Debian", "Android"],
-        "Design" => ["Canva", "Figma", "GIMP", "Picsart", "Font Awesome", "CoreUI", "Google Fonts", "SVG"],
-        "Intelligences artificielles" => ["CLIs", "LLMs", "ChatGPT", "Codex", "Claude", "Claude Code", "Grok", "Gemini", "Mistral AI"],
-        "Communication" => ["YouTube", "TikTok", "Instagram", "Facebook", "Twitter", "LinkedIn", "Pinterest", "Discord", "Kick", "Twitch"],
-        "Autre" => ["Markdown", "Architecture MVC", "VBScript", "Script Batch", "Google Adsense"]
+        "Web & Référencements" => [["name" => "PHP", "level" => 1], ["name" => "HTML", "level" => 0], ["name" => "CSS", "level" => 0], ["name" => "APACHE", "level" => 2], ["name" => "SEO", "level" => 1], ["name" => "SMA/SMO", "level" => 0], ["name" => "SEA", "level" => 3], ["name" => "GEO/SGEO", "level" => 2], ["name" => "Google Ads", "level" => 0], ["name" => "Google Adsense", "level" => 3], ["name" => "Google Analytics", "level" => 1], ["name" => "Google Search Console", "level" => 0], ["name" => "Crawlers", "level" => 1], ["name" => "Scrapers", "level" => 0]],
+        "Outils & Environnements" => [["name" => "Trello", "level" => 1], ["name" => "Git", "level" => 0], ["name" => "Github", "level" => 0], ["name" => "GitLab", "level" => 1], ["name" => "OVHcloud", "level" => 0], ["name" => "Netlify", "level" => 0], ["name" => "Vercel", "level" => 2], ["name" => "Postman", "level" => 2], ["name" => "cdnjs", "level" => 2], ["name" => "Cloudflare", "level" => 1], ["name" => "Unity", "level" => 3], ["name" => "WSL", "level" => 3], ["name" => "LTSP", "level" => 3], ["name" => "PowerShell", "level" => 0], ["name" => "FileZilla", "level" => 0], ["name" => "LibreOffice", "level" => 0], ["name" => "Microsoft 365", "level" => 1], ["name" => "Oracle VirtualBox", "level" => 0], ["name" => "Visual Studio", "level" => 2], ["name" => "Visual Studio Code", "level" => 0]],
+        "JavaScript" => [["name" => "JavaScript", "level" => 0], ["name" => "TypeScript", "level" => 0], ["name" => "Electron", "level" => 0], ["name" => "Node.js", "level" => 0], ["name" => "NPM", "level" => 1], ["name" => "jQuery", "level" => 2]],
+        "Python & Données" => [["name" => "Python", "level" => 0], ["name" => "Flask", "level" => 2], ["name" => "phpMyAdmin", "level" => 0], ["name" => "SQL", "level" => 1], ["name" => "MySQL", "level" => 1], ["name" => "SQLiteStudio", "level" => 3], ["name" => "CSV", "level" => 0], ["name" => "JSON", "level" => 0]],
+        "Développement de Jeux" => [["name" => "C++", "level" => 3], ["name" => "Moddeur PlayStation", "level" => 0], ["name" => "Filmbox (FBX)", "level" => 3]],
+        "Systèmes d'exploitation" => [["name" => "Windows 10, 11", "level" => 0], ["name" => "Linux", "level" => 1], ["name" => "Ubuntu", "level" => 1], ["name" => "Debian", "level" => 1], ["name" => "macOS", "level" => 3], ["name" => "Android", "level" => 0]],
+        "Design" => [["name" => "Canva", "level" => 0], ["name" => "Figma", "level" => 3], ["name" => "GIMP", "level" => 1], ["name" => "Picsart", "level" => 0], ["name" => "Font Awesome", "level" => 0], ["name" => "CoreUI", "level" => 0], ["name" => "Google Fonts", "level" => 0], ["name" => "SVG", "level" => 2]],
+        "Intelligences artificielles" => [["name" => "CLIs", "level" => 0], ["name" => "LLMs", "level" => 0], ["name" => "ChatGPT", "level" => 0], ["name" => "Codex", "level" => 0], ["name" => "Claude", "level" => 0], ["name" => "Claude Code", "level" => 1], ["name" => "Grok", "level" => 3], ["name" => "Gemini", "level" => 2], ["name" => "Mistral AI", "level" => 2]],
+        "Communication" => [["name" => "YouTube", "level" => 0], ["name" => "TikTok", "level" => 0], ["name" => "Instagram", "level" => 0], ["name" => "Facebook", "level" => 3], ["name" => "Twitter", "level" => 2], ["name" => "LinkedIn", "level" => 0], ["name" => "Pinterest", "level" => 2], ["name" => "Discord", "level" => 1], ["name" => "Kick", "level" => 2], ["name" => "Twitch", "level" => 1]],
+        "Autre" => [["name" => "Markdown", "level" => 1], ["name" => "Architecture MVC", "level" => 1], ["name" => "VBScript", "level" => 3], ["name" => "Script Batch", "level" => 2]]
     ];
     $jobs = [
         // ["nom du poste", "nom de l'image .webp", "nom de l'entreprise", "type de poste", "description", "date", "lieu"],

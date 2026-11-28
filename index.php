@@ -238,11 +238,21 @@
                             $compteurSkills++;
                             $main = sprintf('%02d', $compteurSkills);
                             echo '<div><span>'.htmlspecialchars($main, ENT_QUOTES, 'UTF-8').'</span><h2>'.htmlspecialchars($skill, ENT_QUOTES, 'UTF-8').'</h2><ul>';
-                            foreach ($skillstech as $skills) { echo '<li>'.htmlspecialchars($skills, ENT_QUOTES, 'UTF-8').'</li>'; }
+                            foreach ($skillstech as $skills) {
+                                $level = isset($levelsSKILLS[$skills["level"]]) ? $levelsSKILLS[$skills["level"]] : '';
+                                echo '<li>'.$level.htmlspecialchars($skills["name"], ENT_QUOTES, 'UTF-8').'</li>';
+                            }
                             echo '</ul></div>';
                         }
                     ?>
                 </div>
+                <p class="langues">
+                    <span><?= $levelsSKILLS[0] ?>&nbsp;·&nbsp;Compétence maîtrisée</span>
+                    <br><br>
+                    <span><?= $levelsSKILLS[1] ?>&nbsp;·&nbsp;Excellente maîtrise</span>
+                    <span><?= $levelsSKILLS[2] ?>&nbsp;·&nbsp;Bonne maîtrise</span>
+                    <span><?= $levelsSKILLS[3] ?>&nbsp;·&nbsp;Peu utilisé</span>
+                </p>
             </div>
         </div>
         <div class="spoty spotyResponsive FlexCenter">

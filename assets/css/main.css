@@ -808,3 +808,9 @@ main {
     font: 11px var(--sans);
     margin: 5px 10px;
 }
+
+.level-base   { margin-right: 4px; }
+.level-blue   { color: var(--blue); }
+.level-gold   { color: #c6ba14; }
+.level-silver { color: #8b929b; }
+.level-bronze { color: #a87552; }
